@@ -8,11 +8,11 @@
 
 ## Progress
 
-**1 / 136 topics complete** — see the learning map below for what's done and what's next.
+**2 / 136 topics complete** — see the learning map below for what's done and what's next.
 
 | Section | Done | Total |
 |---------|------|-------|
-| 01 · Model inference core | 1 | 17 |
+| 01 · Model inference core | 2 | 17 |
 | 02 · Model optimization | 0 | 11 |
 | 03 · Serving infrastructure | 0 | 15 |
 | 04 · Retrieval & memory | 0 | 12 |
