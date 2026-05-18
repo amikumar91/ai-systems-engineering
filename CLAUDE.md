@@ -14,19 +14,20 @@ A personal knowledge base covering the full production AI systems engineering st
 
 | Command | What it does |
 |---------|-------------|
-| `/research-topic <name>` | Fully researches and writes/updates a topic using three specialist subagents |
+| `/research-topic <name>` | Fully researches and writes/updates a topic using four specialist subagents plus a critic validation loop |
 | `/discover-topics` | Scans the ecosystem for missing topics, outdated content, and tooling improvements |
 
 ### Subagents (`.claude/agents/`)
 
 | Agent | Role |
 |-------|------|
-| `researcher` | Runs 6-8 web searches, reads primary sources, returns a structured research brief |
-| `practitioner` | Mines GitHub issues, Stack Overflow, Reddit, HN, and engineering blogs for real production problems, workarounds, and hard-won lessons |
-| `image-finder` | Finds CC0/public-domain diagrams on Wikimedia Commons or arxiv, downloads them — no logos or trademarks |
-| `topic-writer` | Takes research brief + practitioner findings + image result, writes the complete topic file following the style guide |
+| `researcher` | Runs 6-8 web searches, reads primary sources, returns a structured research brief scoped to this topic's position in the learning sequence |
+| `practitioner` | Mines GitHub issues, Stack Overflow, Reddit, HN, and engineering blogs — applies scope filter to return only findings relevant to this topic type, not adjacent topics |
+| `image-finder` | Receives a specific diagram description from the scope brief; finds CC0 images or generates custom SVGs; returns a coverage assessment so the topic-writer can fill gaps with Mermaid |
+| `topic-writer` | Takes scope brief + research + practitioner + image; applies relevance filter; writes with concept ordering, cross-references, gotcha grouping, and date stamp |
+| `critic` | Reads the completed file; checks 12-point rubric (section completeness, format rules, gotcha relevance, code length, date stamp, cross-references); returns PASS or specific issues |
 
-The `/research-topic` command orchestrates all four in sequence. You do not call subagents directly.
+The `/research-topic` command orchestrates all five in a structured flow. You do not call subagents directly.
 
 ### MCP servers (`.claude/settings.json`)
 
