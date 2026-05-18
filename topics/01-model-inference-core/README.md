@@ -6,7 +6,7 @@ Work through topics in the order below. Each one depends on the previous.
 
 | Step | Topic | One-liner | Status |
 |------|-------|-----------|--------|
-| 1 | [LLM, SLM & Foundation Models](llm-slm-overview.md) | What an LLM actually is and how it differs from earlier ML models | 🔴 |
+| 1 | [LLM, SLM & Foundation Models](llm-slm-overview.md) | What an LLM actually is and how it differs from earlier ML models | 🟢 |
 | 2 | [Tokenization](tokenization.md) | How raw text is split into the tokens a model actually sees | 🔴 |
 | 3 | [Embeddings](embeddings.md) | How tokens get numerical meaning in high-dimensional space | 🔴 |
 | 4 | [Transformer architecture](transformer.md) | The encoder-decoder architecture that underlies every modern LLM | 🔴 |

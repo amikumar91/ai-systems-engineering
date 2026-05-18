@@ -1,4 +1,4 @@
-?# AI Systems Engineering
+# AI Systems Engineering
 
 > A personal knowledge base for understanding modern AI systems engineering — from inference infrastructure to agents, evaluation, and production operations.
 >
@@ -8,11 +8,11 @@
 
 ## Progress
 
-**0 / 136 topics complete** — see the learning map below for what's done and what's next.
+**1 / 136 topics complete** — see the learning map below for what's done and what's next.
 
 | Section | Done | Total |
 |---------|------|-------|
-| 01 · Model inference core | 0 | 17 |
+| 01 · Model inference core | 1 | 17 |
 | 02 · Model optimization | 0 | 11 |
 | 03 · Serving infrastructure | 0 | 15 |
 | 04 · Retrieval & memory | 0 | 12 |
@@ -84,16 +84,16 @@ flowchart TD
 
 Topics within each section are ordered from foundational → advanced. Follow sections in this order for the best build-up:
 
-1. **01 · Model inference core** — understand what LLMs are before anything else
-2. **06 · Prompting & control** — learn to talk to models (fast practical wins)
-3. **03 · Serving infrastructure** — learn how to deploy what you understand
-4. **02 · Model optimization** — make models smaller and faster
-5. **04 · Retrieval & memory** — ground models in real data
-6. **05 · Agents & orchestration** — build systems that act autonomously
-7. **10 · Safety & governance** — make it safe and compliant
-8. **07 · Evaluation & quality** — measure whether it actually works
-9. **08 · Observability & ops** — run it in production reliably
-10. **09 · Integration & cloud** — connect to the broader stack
+1. **Model inference core** — understand what LLMs are before anything else
+2. **Prompting & control** — learn to talk to models (fast practical wins)
+3. **Serving infrastructure** — learn how to deploy what you understand
+4. **Model optimization** — make models smaller and faster
+5. **Retrieval & memory** — ground models in real data
+6. **Agents & orchestration** — build systems that act autonomously
+7. **Safety & governance** — make it safe and compliant
+8. **Evaluation & quality** — measure whether it actually works
+9. **Observability & ops** — run it in production reliably
+10. **Integration & cloud** — connect to the broader stack
 
 ---
 
