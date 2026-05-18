@@ -112,10 +112,13 @@ Three elements, clearly separated. Not one dense paragraph containing all three.
 - Define every acronym the first time it appears
 
 **Image and Mermaid rules:**
-- If the image-finder returned a downloaded or generated image that **fully covers** the primary mechanism: embed it here with `![alt text](../../assets/images/topics/<section>/<topic>.ext)`
-- If the image-finder returned an image that **partially covers** the topic (noted as "partial match" in its output): embed it AND add a Mermaid diagram covering what the image misses
-- If the image-finder returned "use Mermaid instead": write a Mermaid diagram with at least 3 stages — not a single box
-- **You can always add Mermaid diagrams regardless of what the image-finder returned.** The image result is a supplement to your judgment, not a constraint. If a concept needs both an image and a flow diagram, use both.
+
+Two diagram tools are available — use both when the topic benefits from it:
+
+- **Excalidraw PNG** — if the image-finder generated an `.excalidraw` file, embed the PNG it exports: `![alt text](../../assets/images/topics/<section>/<topic>.png)`. Use this for colorful tier/landscape/overview diagrams.
+- **Mermaid code block** — if the image-finder returned a Mermaid suggestion, embed it as a fenced ` ```mermaid ` block. Use this for flows, pipelines, state machines. Must have at least 3 nodes — not a single box.
+- **Use both when the topic needs both**: an Excalidraw image for the landscape overview AND a Mermaid flow for the step-by-step process is a valid combination.
+- **You can always add a Mermaid diagram regardless of what image-finder returned.** If the concept has a sequential flow that an Excalidraw diagram doesn't show, add a Mermaid block below it. Your judgment overrides the image-finder's choice.
 
 **Cross-references — insert these inline:**
 

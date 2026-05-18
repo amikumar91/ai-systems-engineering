@@ -23,7 +23,7 @@ A personal knowledge base covering the full production AI systems engineering st
 |-------|------|
 | `researcher` | Runs 6-8 web searches, reads primary sources, returns a structured research brief scoped to this topic's position in the learning sequence |
 | `practitioner` | Mines GitHub issues, Stack Overflow, Reddit, HN, and engineering blogs — applies scope filter to return only findings relevant to this topic type, not adjacent topics |
-| `image-finder` | Receives a specific diagram description from the scope brief; finds CC0 images or generates custom SVGs; returns a coverage assessment so the topic-writer can fill gaps with Mermaid |
+| `image-finder` | Receives a specific diagram description from the scope brief; generates an Excalidraw JSON file (for rich, colorful, multi-tier diagrams) or a Mermaid code block (for simple flows) — no CC0 downloads, no SVGs |
 | `topic-writer` | Takes scope brief + research + practitioner + image; applies relevance filter; writes with concept ordering, cross-references, gotcha grouping, and date stamp |
 | `critic` | Reads the completed file; checks 12-point rubric (section completeness, format rules, gotcha relevance, code length, date stamp, cross-references); returns PASS or specific issues |
 
@@ -85,9 +85,13 @@ Every topic must be understandable to a software engineer who has never encounte
 - Start sentences with the subject, not a clause
 
 ### Diagrams and images
-- **Mermaid** (mermaid code blocks): use for pipelines, flows, state machines, and multi-step processes where sequence matters. Renders natively on GitHub and VS Code (Mermaid Preview extension).
-- **Downloaded images**: only for hardware diagrams, authoritative architecture figures (e.g., the original Transformer figure), or cases where a real illustration is meaningfully better than Mermaid. Source must be CC0 or public domain, no logos or trademarks. Stored in `assets/images/topics/<section>/`.
-- **No images**: pure algorithmic concepts, parameter descriptions, tool comparisons — use clear prose and Mermaid instead.
+
+Two diagram tools only — no SVG generation, no CC0 image downloads:
+
+- **Excalidraw** (`.excalidraw` files in `assets/images/topics/<section>/`): use for landscape overviews, tier comparisons, multi-column colorful layouts, and any diagram that benefits from visual density. The image-finder generates the JSON; the user exports to PNG via the VS Code Excalidraw extension. Markdown embeds reference the `.png`: `![alt](../../assets/images/topics/<section>/<topic>.png)`.
+- **Mermaid** (fenced ` ```mermaid ` code blocks): use for pipelines, flows, state machines, and multi-step processes where sequence matters. Renders natively in GitHub and VS Code (Mermaid Preview extension). No file needed — embedded directly in the topic file.
+- **Both together**: an Excalidraw overview + a Mermaid flow in the same topic file is valid and encouraged when the topic has both a landscape aspect and a sequential process.
+- **No diagrams**: pure algorithmic math, simple parameter lists — use clear prose instead.
 
 ---
 

@@ -119,7 +119,7 @@ Topics within each section are listed in recommended study order (top = start he
 
 | # | Topic | Status | Notes |
 |---|-------|--------|-------|
-| 1 | [LLM, SLM & Foundation Models](topics/01-model-inference-core/llm-slm-overview.md) | 🔴 | |
+| 1 | [LLM, SLM & Foundation Models](topics/01-model-inference-core/llm-slm-overview.md) | 🟢 | |
 | 2 | [Tokenization](topics/01-model-inference-core/tokenization.md) | 🔴 | |
 | 3 | [Embeddings](topics/01-model-inference-core/embeddings.md) | 🔴 | |
 | 4 | [Transformer architecture](topics/01-model-inference-core/transformer.md) | 🔴 | |

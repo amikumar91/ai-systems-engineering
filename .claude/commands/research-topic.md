@@ -93,10 +93,11 @@ Prepend the scope brief, then ask it to:
 ### Dispatch image-finder subagent
 
 Prepend the scope brief, then ask it to:
-- Search for an image matching the **diagram description** from the scope brief (not just the topic name)
-- For conceptual-overview topics: prefer generating a custom SVG if no CC0 image precisely matches the diagram description
-- Return: downloaded image path + embed code + coverage assessment, OR generated SVG path + embed code, OR Mermaid suggestion with specific content description
-- Note whether the result is a full match or partial match to the diagram description
+- Build a diagram matching the **diagram description** from the scope brief (not just the topic name)
+- Use **Excalidraw JSON** for rich, colorful, multi-tier diagrams (landscape overviews, category comparisons, multi-column layouts); save to `assets/images/topics/<section>/<topic>.excalidraw`
+- Use **Mermaid code block** for simple flows, pipelines, and state machines
+- Return: generated Excalidraw file path + PNG embed code, OR Mermaid code block suggestion
+- No CC0 image downloads, no SVG generation
 
 Wait for all three results before proceeding.
 
@@ -116,7 +117,7 @@ The topic-writer will:
 1. Apply the relevance filter (discard practitioner findings that match the exclude directive)
 2. Plan the concept order (umbrella → dominant type → mechanics → variants → gotchas)
 3. Write the complete file with cross-reference links, gotcha grouping, date stamp, and code ≤30 lines
-4. Use image + Mermaid as needed — the image result is a supplement, not a constraint
+4. Embed the Excalidraw PNG (`![alt](../../assets/images/topics/<section>/<topic>.png)`) and/or Mermaid block as needed — can use both in the same file
 
 ---
 
@@ -170,8 +171,8 @@ In the section's `topics/<section>/README.md`:
 
 ```bash
 git add topics/<section>/<topic>.md README.md topics/<section>/README.md
-# Include image if downloaded (PNG) or generated (SVG)
+# Include Excalidraw source file if generated (PNG is produced by user from .excalidraw)
+git add assets/images/topics/<section>/<topic>.excalidraw 2>/dev/null || true
 git add assets/images/topics/<section>/<topic>.png 2>/dev/null || true
-git add assets/images/topics/<section>/<topic>.svg 2>/dev/null || true
 git commit -m "docs: research and document $ARGUMENTS"
 ```
