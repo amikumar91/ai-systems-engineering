@@ -56,6 +56,8 @@ Every topic file follows this exact template. All 7 sections must have real cont
 ## Resources                     <- exactly 2-3 links: paper > official docs > one authoritative post
 ```
 
+Status and layer are tracked in the section README and main README only — do not put them in the topic file itself. The topic file starts directly with `# Title` followed by `---` and then `## What it is`.
+
 ---
 
 ## Writing style guide

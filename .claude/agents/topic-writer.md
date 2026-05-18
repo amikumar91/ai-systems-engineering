@@ -59,11 +59,10 @@ Do not let the most prominent concept crowd out the others. If the topic title n
 
 ## Topic file structure
 
+Status and layer are tracked in the section README and main README only. Do not include them in the topic file. The file starts directly with the title, a separator, then the sections.
+
 ```markdown
 # <Topic Title>
-
-> **Layer:** <Architecture layer>
-> **Status:** 🟢 Done
 
 ---
 

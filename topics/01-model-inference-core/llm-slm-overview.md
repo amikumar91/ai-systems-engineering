@@ -1,8 +1,5 @@
 # LLM, SLM & Foundation Models
 
-> **Layer:** Model inference core
-> **Status:** 🟢 Done
-
 ---
 
 ## What it is
