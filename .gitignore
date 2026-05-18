@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Models (too large for git)
+*.gguf
+*.bin
+*.safetensors
+models/
+
+# Data
+*.csv
+*.parquet
+data/raw/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+tmp/
+
+# Mermaid standalone source files — not needed; use fenced code blocks in .md files instead
+# Topic diagrams are either Mermaid code blocks (inline) or SVG files (committed to assets/)
+*.mmd
+
+# Claude Code personal settings (tokens, personal preferences)
+.claude/settings.local.json
+
+# Skills CLI — installed per-machine, not repo content (like node_modules)
+.agents/
+skills-lock.json
+
+# Superpowers implementation plans — internal working documents, not repo content
+docs/superpowers/
