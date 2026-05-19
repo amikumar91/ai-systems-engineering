@@ -16,6 +16,7 @@ A personal knowledge base covering the full production AI systems engineering st
 |---------|-------------|
 | `/research-topic <name>` | Fully researches and writes/updates a topic using four specialist subagents plus a critic validation loop |
 | `/discover-topics` | Scans the ecosystem for missing topics, outdated content, and tooling improvements |
+| `/research-demo [name]` | Discovers or scaffolds a demo — suggests candidates from repo context and community sources when invoked without a name; scaffolds a runnable demo folder with README update when given a name |
 
 ### Subagents (`.claude/agents/`)
 
@@ -132,4 +133,6 @@ Demos live in `demos/<name>/`. Each demo:
 - Produces working code — no stubs
 - Has a `requirements.txt`
 - Records build observations in `README.md`'s "Build notes" section
-- Is linked from the topic file's `## Code / demo` section
+- Is linked from the main README Demos table only — **never** from individual topic files
+
+**Snippet vs demo:** Every topic file uses a self-contained inline snippet (15–30 lines) in its `## Code / demo` section. Demos in `demos/` are separate multi-topic integration programs — use `/research-demo` to discover and scaffold them. Demo links appear only in the main README Demos table, which tracks which topics each demo covers. Topic files never link to `demos/`.
