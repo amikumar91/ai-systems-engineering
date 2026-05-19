@@ -1,3 +1,6 @@
+---
+sidebar_position: 9
+---
 # RLHF — Reinforcement Learning from Human Feedback
 
 > **Layer:** Model optimization

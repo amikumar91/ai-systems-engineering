@@ -1,3 +1,6 @@
+---
+sidebar_position: 11
+---
 # Langfuse & LangSmith
 
 > **Layer:** Observability & ops

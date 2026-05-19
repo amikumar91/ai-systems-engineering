@@ -1,3 +1,6 @@
+---
+sidebar_position: 14
+---
 # EU AI Act
 
 > **Layer:** Safety, alignment & governance

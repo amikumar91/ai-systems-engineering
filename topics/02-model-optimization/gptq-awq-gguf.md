@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # GPTQ, AWQ & GGUF — Quantization Formats
 
 > **Layer:** Model optimization

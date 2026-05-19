@@ -1,3 +1,6 @@
+---
+sidebar_position: 16
+---
 # Multimodal LLMs & Vision-Language Models
 
 > **Layer:** Model inference core

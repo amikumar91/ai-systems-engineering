@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 # Adapter Layers
 
 > **Layer:** Model optimization

@@ -1,3 +1,6 @@
+---
+sidebar_position: 12
+---
 # Handoff — Agent to Agent
 
 > **Layer:** Agents & orchestration

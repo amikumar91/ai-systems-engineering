@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Latency Percentiles — p95 / p99
 
 > **Layer:** Observability & ops

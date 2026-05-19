@@ -1,3 +1,6 @@
+---
+sidebar_position: 12
+---
 # Arize & Datadog LLM
 
 > **Layer:** Observability & ops

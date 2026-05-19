@@ -1,3 +1,6 @@
+---
+sidebar_position: 12
+---
 # Working & Episodic Memory
 
 > **Layer:** Retrieval & memory

@@ -1,3 +1,6 @@
+---
+sidebar_position: 11
+---
 # Expert Parallelism (MoE)
 
 > **Layer:** Serving infrastructure

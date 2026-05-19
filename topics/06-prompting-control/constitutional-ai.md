@@ -1,3 +1,6 @@
+---
+sidebar_position: 8
+---
 # Constitutional AI
 
 > **Layer:** Prompting & control

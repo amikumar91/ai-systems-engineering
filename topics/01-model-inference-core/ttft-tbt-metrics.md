@@ -1,3 +1,6 @@
+---
+sidebar_position: 9
+---
 # TTFT & TBT — Inference Latency Metrics
 
 > **Layer:** Model inference core

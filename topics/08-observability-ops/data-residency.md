@@ -1,3 +1,6 @@
+---
+sidebar_position: 13
+---
 # Data Residency
 
 > **Layer:** Observability & ops

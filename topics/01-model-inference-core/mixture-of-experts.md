@@ -1,3 +1,6 @@
+---
+sidebar_position: 15
+---
 ﻿# mixture of experts
 
 > **Layer:** TBD

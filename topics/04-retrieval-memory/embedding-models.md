@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Embedding Models
 
 > **Layer:** Retrieval & memory

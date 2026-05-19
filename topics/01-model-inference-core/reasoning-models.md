@@ -1,3 +1,6 @@
+---
+sidebar_position: 17
+---
 # Reasoning Models
 
 > **Layer:** Model inference core

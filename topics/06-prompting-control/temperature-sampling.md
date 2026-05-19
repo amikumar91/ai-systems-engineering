@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Temperature, Top-p & Sampling Parameters
 
 > **Layer:** Prompting & control

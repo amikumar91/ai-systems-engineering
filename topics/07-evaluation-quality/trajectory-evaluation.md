@@ -1,3 +1,6 @@
+---
+sidebar_position: 11
+---
 # Trajectory Evaluation (Agents)
 
 > **Layer:** Evaluation & quality

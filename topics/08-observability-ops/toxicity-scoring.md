@@ -1,3 +1,6 @@
+---
+sidebar_position: 8
+---
 # Toxicity Scoring
 
 > **Layer:** Observability & ops

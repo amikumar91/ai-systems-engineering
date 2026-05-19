@@ -1,3 +1,6 @@
+---
+sidebar_position: 12
+---
 # Hugging Face Inference Endpoints
 
 > **Layer:** Integration & cloud

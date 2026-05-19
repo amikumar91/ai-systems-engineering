@@ -1,3 +1,6 @@
+---
+sidebar_position: 13
+---
 # Chunked Prefill
 
 > **Layer:** Model inference core

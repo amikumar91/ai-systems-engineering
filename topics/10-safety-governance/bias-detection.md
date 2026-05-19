@@ -1,3 +1,6 @@
+---
+sidebar_position: 9
+---
 # Bias Detection
 
 > **Layer:** Safety, alignment & governance

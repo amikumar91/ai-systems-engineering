@@ -1,3 +1,6 @@
+---
+sidebar_position: 6
+---
 ﻿# offline vs online eval
 
 > **Layer:** TBD

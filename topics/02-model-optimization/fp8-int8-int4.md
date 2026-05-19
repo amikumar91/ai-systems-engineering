@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # FP8 / INT8 / INT4 — Numeric Formats
 
 > **Layer:** Model optimization

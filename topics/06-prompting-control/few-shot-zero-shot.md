@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Few-Shot & Zero-Shot Prompting
 
 > **Layer:** Prompting & control
