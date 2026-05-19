@@ -1,0 +1,10 @@
+{
+  "default": true,
+  "line-length": false,
+  "no-inline-html": false,
+  "fenced-code-language": false,
+  "blanks-around-headings": false,
+  "no-bare-urls": false,
+  "ul-indent": false,
+  "no-trailing-punctuation": false
+}
