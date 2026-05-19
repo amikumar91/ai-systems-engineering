@@ -74,6 +74,19 @@ Assemble a scope brief in this exact format. You will pass this verbatim to all 
 
 ---
 
+### 0f. Create the branch
+
+Derive a branch slug from the topic name: lowercase, hyphens only, no underscores, max 35 characters.
+Examples: "KV cache" → `kv-cache`, "RAG chunking strategies" → `rag-chunking-strategies`, "LLM, SLM & Foundation Models" → `llm-slm-foundation-models`
+
+```bash
+git checkout -b docs/<topic-slug>
+```
+
+All subsequent commits in this command run on this branch. Do not commit anything to master.
+
+---
+
 ## Step 1 — Research in parallel (dispatch three subagents simultaneously)
 
 Dispatch all three agents at the same time. Each receives the full scope brief prepended to its prompt.
@@ -172,12 +185,53 @@ In the section's `topics/<section>/README.md`:
 
 ---
 
-## Step 7 — Commit
+## Step 7 — Push branch and open PR
 
 ```bash
 git add topics/<section>/<topic>.md README.md topics/<section>/README.md
-# Include Excalidraw source file if generated (PNG is produced by user from .excalidraw)
 git add assets/images/topics/<section>/<topic>.excalidraw 2>/dev/null || true
 git add assets/images/topics/<section>/<topic>.png 2>/dev/null || true
 git commit -m "docs: research and document $ARGUMENTS"
+git push origin docs/<topic-slug>
 ```
+
+Then open the PR. Build the `--body` string from the values you have:
+- `<topic-name>` = the topic's display name (e.g., "Tokenization")
+- `<section-name>` = the section display name (e.g., "01 — Model inference core")
+- `<topic-file-path>` = relative path (e.g., `topics/01-model-inference-core/tokenization.md`)
+- `<sources>` = the 2-4 primary sources from the researcher subagent's "Primary sources" section
+- `<critic-result>` = verbatim PASS or the unresolved issues list from the critic
+
+```bash
+gh pr create \
+  --title "docs: research and document $ARGUMENTS" \
+  --base master \
+  --label "topic" \
+  --body "$(cat <<'PRBODY'
+## What this PR does
+Researches and documents the <topic-name> topic (<section-name>).
+
+## Type
+- [x] New topic
+
+## File(s) changed
+<topic-file-path>
+
+## Checklist
+- [x] All 7 sections present with real content
+- [x] Gotchas & production behavior has ≥ 3 sourced findings
+- [x] Code snippet ≤ 30 lines (or marked # REQUIRES:)
+- [x] Status icon updated in section README and main README
+- [x] Progress counter updated in main README
+- [x] Adjacent topics cross-referenced only (no scope bleed)
+
+## Sources used
+<sources — one per line, numbered>
+
+## Critic result
+<critic-result>
+PRBODY
+)"
+```
+
+After the PR is created, print the PR URL so it is visible in the conversation.
