@@ -332,11 +332,11 @@ Topics within each section are listed in recommended study order (top = start he
 
 ## Demos
 
-| Demo | What it covers | Status |
-|------|----------------|--------|
-| [vllm-minimal](demos/vllm-minimal/) | Spin up vLLM, serve a model, hit the OpenAI-compatible API | 🔴 |
-| [rag-with-eval](demos/rag-with-eval/) | RAG pipeline end-to-end with RAGAS eval baked in | 🔴 |
-| [guardrail-pipeline](demos/guardrail-pipeline/) | PII redaction + injection detection before LLM call | 🔴 |
+| Demo | What it covers | Topics | Status |
+|------|----------------|--------|--------|
+| [vllm-minimal](demos/vllm-minimal/) | Spin up vLLM, serve a model, hit the OpenAI-compatible API | [vLLM](topics/03-serving-infrastructure/vllm.md) · [Continuous batching](topics/01-model-inference-core/continuous-batching.md) · [Paged attention](topics/01-model-inference-core/paged-attention.md) · [Serving metrics](topics/03-serving-infrastructure/serving-metrics.md) | 🔴 |
+| [rag-with-eval](demos/rag-with-eval/) | RAG pipeline end-to-end with RAGAS eval baked in | [RAG](topics/04-retrieval-memory/rag.md) · [Embeddings](topics/01-model-inference-core/embeddings.md) · [Chunking strategies](topics/04-retrieval-memory/chunking-strategies.md) · [Vector databases](topics/04-retrieval-memory/vector-databases.md) · [RAGAS](topics/07-evaluation-quality/ragas.md) | 🔴 |
+| [guardrail-pipeline](demos/guardrail-pipeline/) | PII redaction + injection detection before LLM call | [Input guardrails](topics/10-safety-governance/input-guardrails.md) · [PII redaction](topics/10-safety-governance/pii-redaction.md) · [Prompt injection](topics/10-safety-governance/prompt-injection.md) · [Output guardrails](topics/10-safety-governance/output-guardrails.md) | 🔴 |
 
 ---
 
