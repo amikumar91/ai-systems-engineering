@@ -1,3 +1,6 @@
+---
+sidebar_position: 6
+---
 ﻿# kv cache aware routing
 
 > **Layer:** TBD

@@ -1,3 +1,6 @@
+---
+sidebar_position: 11
+---
 # Model Merging
 
 > **Layer:** Model optimization

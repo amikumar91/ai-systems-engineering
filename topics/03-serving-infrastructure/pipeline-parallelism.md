@@ -1,3 +1,6 @@
+---
+sidebar_position: 10
+---
 # Pipeline Parallelism
 
 > **Layer:** Serving infrastructure

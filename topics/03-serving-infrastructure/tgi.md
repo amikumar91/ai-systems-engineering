@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # TGI — Text Generation Inference
 
 > **Layer:** Serving infrastructure

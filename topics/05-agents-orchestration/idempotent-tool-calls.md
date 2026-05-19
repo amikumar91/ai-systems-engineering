@@ -1,3 +1,6 @@
+---
+sidebar_position: 14
+---
 # Idempotent Tool Calls
 
 > **Layer:** Agents & orchestration

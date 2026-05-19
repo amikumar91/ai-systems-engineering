@@ -1,3 +1,6 @@
+---
+sidebar_position: 14
+---
 # Edge Inference
 
 > **Layer:** Serving infrastructure

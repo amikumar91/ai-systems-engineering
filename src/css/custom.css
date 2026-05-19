@@ -1,0 +1,64 @@
+/* Forest Teal theme — light: #0f766e, dark: #2dd4bf
+   Background — light: #f5f3ee (warm cream), dark: #111111 (near-black) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ── Light mode ── */
+:root {
+  --ifm-color-primary: #0f766e;
+  --ifm-color-primary-dark: #0d6b64;
+  --ifm-color-primary-darker: #0b605a;
+  --ifm-color-primary-darkest: #094f4a;
+  --ifm-color-primary-light: #14897f;
+  --ifm-color-primary-lighter: #169488;
+  --ifm-color-primary-lightest: #1aaa9c;
+
+  --ifm-background-color: #f5f3ee;
+  --ifm-navbar-background-color: #f5f3ee;
+  --ifm-footer-background-color: #ece9e2;
+  --ifm-toc-border-color: #e0dcd4;
+  --ifm-hr-border-color: #e0dcd4;
+
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-weight: 800;
+  --ifm-font-weight-bold: 700;
+  --ifm-code-font-size: 90%;
+  --ifm-global-radius: 6px;
+
+  --docusaurus-highlighted-code-line-bg: rgba(15, 118, 110, 0.08);
+}
+
+/* ── Dark mode ── */
+[data-theme='dark'] {
+  --ifm-color-primary: #2dd4bf;
+  --ifm-color-primary-dark: #1fc2ad;
+  --ifm-color-primary-darker: #18b09c;
+  --ifm-color-primary-darkest: #0e8f7e;
+  --ifm-color-primary-light: #42dbc8;
+  --ifm-color-primary-lighter: #54dece;
+  --ifm-color-primary-lightest: #7de6d9;
+
+  --ifm-background-color: #111111;
+  --ifm-navbar-background-color: #111111;
+  --ifm-footer-background-color: #0a0a0a;
+  --ifm-toc-border-color: #2a2a2a;
+  --ifm-hr-border-color: #2a2a2a;
+
+  --docusaurus-highlighted-code-line-bg: rgba(45, 212, 191, 0.1);
+}
+
+/* ── Navbar border ── */
+.navbar {
+  border-bottom: 1px solid var(--ifm-hr-border-color);
+  box-shadow: none;
+}
+
+/* ── Sidebar ── */
+.menu__link--active {
+  font-weight: 700;
+}
+
+/* ── Code blocks ── */
+pre {
+  border: 1px solid var(--ifm-hr-border-color);
+}

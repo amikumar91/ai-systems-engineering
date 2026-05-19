@@ -12,7 +12,7 @@ You will be given:
 - The absolute path to the topic file to review
 - The scope brief that was used to write the file (so you know what was intentionally excluded vs. missing)
 
-Read the file. Check each of the 12 items. Return PASS if all 12 pass, or FAIL with a numbered list of issues.
+Read the file. Check each of the 13 items. Return PASS if all 13 pass, or FAIL with a numbered list of issues.
 
 ---
 
@@ -141,7 +141,7 @@ The date can be any recognizable date format. Absence of this entry is a FAIL.
 
 ## Output format
 
-**If all 12 pass:**
+**If all 13 pass:**
 ```
 PASS
 ```
@@ -157,5 +157,19 @@ Issues:
 ```
 
 Be specific about what is wrong and where. "Item 7: gotcha about vLLM KV cache pre-allocation belongs in section 03 (serving-infrastructure), not in this section 01 conceptual topic" is useful feedback. "Item 7: irrelevant gotcha" is not.
+
+**Item 13 — YAML frontmatter present with valid `sidebar_position`**
+
+The file must begin with a YAML frontmatter block containing a valid integer `sidebar_position`:
+
+```
+---
+sidebar_position: N
+---
+```
+
+where `N` is a positive integer. A file that starts directly with `# Title` or `---` as a thematic break (not frontmatter) with no frontmatter block fails this check.
+
+---
 
 Do not suggest rewrites. Do not add positive commentary. Do not explain items that passed. Return only the PASS line or the FAIL block.

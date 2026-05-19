@@ -1,3 +1,6 @@
+---
+sidebar_position: 8
+---
 # Fine-Tuning & SFT
 
 > **Layer:** Model optimization

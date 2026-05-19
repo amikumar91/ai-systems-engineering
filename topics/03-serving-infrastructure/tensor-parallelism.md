@@ -1,3 +1,6 @@
+---
+sidebar_position: 9
+---
 # Tensor Parallelism
 
 > **Layer:** Serving infrastructure

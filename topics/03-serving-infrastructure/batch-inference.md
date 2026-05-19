@@ -1,3 +1,6 @@
+---
+sidebar_position: 13
+---
 # Batch Inference
 
 > **Layer:** Serving infrastructure

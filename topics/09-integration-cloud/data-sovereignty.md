@@ -1,3 +1,6 @@
+---
+sidebar_position: 13
+---
 # Data Sovereignty
 
 > **Layer:** Integration & cloud

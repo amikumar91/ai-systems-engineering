@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Prompt Engineering
 
 > **Layer:** Prompting & control

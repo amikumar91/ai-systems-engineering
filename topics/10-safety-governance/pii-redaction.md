@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 ﻿# pii redaction
 
 > **Layer:** TBD

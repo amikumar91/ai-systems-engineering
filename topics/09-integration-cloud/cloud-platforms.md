@@ -1,3 +1,6 @@
+---
+sidebar_position: 10
+---
 # Cloud Platforms — Vertex AI, Azure ML, SageMaker
 
 > **Layer:** Integration & cloud

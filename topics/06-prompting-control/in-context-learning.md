@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # In-Context Learning (ICL)
 
 > **Layer:** Prompting & control

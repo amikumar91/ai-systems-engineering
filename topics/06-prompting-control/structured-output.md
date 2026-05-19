@@ -1,3 +1,6 @@
+---
+sidebar_position: 6
+---
 # Structured Output & JSON Mode
 
 > **Layer:** Prompting & control

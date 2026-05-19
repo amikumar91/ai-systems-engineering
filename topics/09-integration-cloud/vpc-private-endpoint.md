@@ -1,3 +1,6 @@
+---
+sidebar_position: 14
+---
 # VPC & Private Endpoint
 
 > **Layer:** Integration & cloud

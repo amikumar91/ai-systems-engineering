@@ -1,3 +1,6 @@
+---
+sidebar_position: 11
+---
 # Managed Inference — Groq, Baseten, Modal
 
 > **Layer:** Integration & cloud

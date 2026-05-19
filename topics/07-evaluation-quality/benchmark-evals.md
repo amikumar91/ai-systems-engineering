@@ -1,3 +1,6 @@
+---
+sidebar_position: 8
+---
 # Benchmark Evals — MMLU, HellaSwag, BEIR
 
 > **Layer:** Evaluation & quality

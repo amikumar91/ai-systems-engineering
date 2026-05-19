@@ -1,3 +1,6 @@
+---
+sidebar_position: 12
+---
 # Policy-as-Code
 
 > **Layer:** Safety, alignment & governance

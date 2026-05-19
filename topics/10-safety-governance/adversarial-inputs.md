@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 # Adversarial Inputs
 
 > **Layer:** Safety, alignment & governance

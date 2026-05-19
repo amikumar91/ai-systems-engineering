@@ -1,3 +1,6 @@
+---
+sidebar_position: 13
+---
 # Tool Registry
 
 > **Layer:** Agents & orchestration

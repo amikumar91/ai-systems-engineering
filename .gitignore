@@ -41,3 +41,8 @@ skills-lock.json
 
 # Superpowers implementation plans — internal working documents, not repo content
 docs/superpowers/
+
+.docusaurus/
+node_modules/
+build/
+.superpowers/

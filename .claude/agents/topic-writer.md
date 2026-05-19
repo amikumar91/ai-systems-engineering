@@ -62,6 +62,10 @@ Do not let the most prominent concept crowd out the others. If the topic title n
 Status and layer are tracked in the section README and main README only. Do not include them in the topic file. The file starts directly with the title, a separator, then the sections.
 
 ```markdown
+---
+sidebar_position: <step number from scope brief>
+---
+
 # <Topic Title>
 
 ---
@@ -87,6 +91,8 @@ Status and layer are tracked in the section README and main README only. Do not 
 
 ## Resources
 ```
+
+The `sidebar_position` value comes from the step number in the scope brief (e.g., if the scope brief says "Step 5 of 17", use `sidebar_position: 5`).
 
 ---
 

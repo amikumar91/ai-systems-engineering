@@ -1,3 +1,6 @@
+---
+sidebar_position: 15
+---
 # A2A Protocol
 
 > **Layer:** Agents & orchestration

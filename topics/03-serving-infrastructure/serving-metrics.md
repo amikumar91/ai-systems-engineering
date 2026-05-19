@@ -1,3 +1,6 @@
+---
+sidebar_position: 12
+---
 # Serving Metrics — Throughput, Latency SLO, Goodput
 
 > **Layer:** Serving infrastructure

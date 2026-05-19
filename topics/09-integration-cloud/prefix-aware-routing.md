@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 # Prefix-Aware Routing
 
 > **Layer:** Integration & cloud

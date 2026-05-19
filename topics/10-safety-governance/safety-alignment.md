@@ -1,3 +1,6 @@
+---
+sidebar_position: 8
+---
 # Safety Alignment
 
 > **Layer:** Safety, alignment & governance

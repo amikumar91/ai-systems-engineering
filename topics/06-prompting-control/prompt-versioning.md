@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 # Prompt Versioning
 
 > **Layer:** Prompting & control

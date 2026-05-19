@@ -1,3 +1,6 @@
+---
+sidebar_position: 10
+---
 # DPO & GRPO — Direct Preference Optimization
 
 > **Layer:** Model optimization

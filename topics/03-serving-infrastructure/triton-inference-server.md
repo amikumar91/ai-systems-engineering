@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 # Triton Inference Server
 
 > **Layer:** Serving infrastructure

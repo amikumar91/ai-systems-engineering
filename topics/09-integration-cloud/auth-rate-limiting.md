@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Auth, OAuth & Rate Limiting
 
 > **Layer:** Integration & cloud

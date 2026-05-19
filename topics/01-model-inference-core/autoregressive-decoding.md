@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 # Autoregressive Decoding
 
 > **Layer:** Model inference core

@@ -1,3 +1,6 @@
+---
+sidebar_position: 11
+---
 # Human Approval Gate
 
 > **Layer:** Safety, alignment & governance
