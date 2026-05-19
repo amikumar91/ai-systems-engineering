@@ -29,7 +29,7 @@ A personal knowledge base covering the full production AI systems engineering st
 | `critic` | Reads the completed file; checks 12-point rubric (section completeness, format rules, gotcha relevance, code length, date stamp, cross-references); returns PASS or specific issues |
 | `demo-researcher` | Operates in two modes for the `/research-demo` command: discovery mode searches web and communities to suggest the best demo to build next; creation mode researches libraries, scenario, and production gotchas for a named demo |
 
-The `/research-topic` command orchestrates all five in a structured flow. You do not call subagents directly.
+The `/research-topic` command orchestrates the first five agents in a structured flow. The `demo-researcher` agent is used exclusively by `/research-demo`. You do not call subagents directly.
 
 ### MCP servers (`.claude/settings.json`)
 
