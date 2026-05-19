@@ -125,7 +125,16 @@ Do not proceed until you receive an affirmative.
 
 ---
 
-## Step 4 — Scaffold the demo folder
+## Step 4 — Create branch and scaffold the demo folder
+
+First, derive a branch slug from DEMO_NAME: lowercase, hyphens only, max 35 characters.
+Example: "rag-with-eval" → `rag-with-eval`, "vLLM minimal serving" → `vllm-minimal-serving`
+
+```bash
+git checkout -b demo/<demo-slug>
+```
+
+All subsequent commits run on this branch. Do not commit to master.
 
 Create `demos/[DEMO_NAME]/` with the following files.
 
@@ -244,9 +253,51 @@ Add the new demo row:
 
 ---
 
-## Step 6 — Commit
+## Step 6 — Push branch and open PR
 
 ```bash
 git add demos/[DEMO_NAME]/ README.md
 git commit -m "feat: scaffold [DEMO_NAME] demo"
+git push origin demo/<demo-slug>
 ```
+
+Then open the PR. Build the `--body` string from:
+- `[DEMO_NAME]` = the demo folder name (e.g., `rag-with-eval`)
+- `<topics-list>` = each entry from RELATED_TOPICS on its own line as `- [Name](path)`
+- `<sources>` = the primary sources from DESIGN_BRIEF
+
+```bash
+gh pr create \
+  --title "feat: scaffold [DEMO_NAME] demo" \
+  --base master \
+  --label "demo" \
+  --body "$(cat <<'PRBODY'
+## What this PR does
+Scaffolds the [DEMO_NAME] demo with README, stub code, and requirements.
+
+## Type
+- [x] New demo
+
+## File(s) changed
+demos/[DEMO_NAME]/
+
+## Topics covered
+<topics-list — one topic per line as - [Name](path)>
+
+## Checklist
+- [x] README.md includes scenario description and topics covered
+- [x] main.py uses real library imports (not pseudocode)
+- [x] requirements.txt has pinned versions
+- [x] # REQUIRES: comments mark infra-dependent steps
+- [x] README.md Demos table updated with Topics column entry
+
+## Sources used
+<sources from DESIGN_BRIEF — one per line, numbered>
+
+## Critic result
+N/A — demo scaffold reviewed via approval gate in Step 3
+PRBODY
+)"
+```
+
+After the PR is created, print the PR URL so it is visible in the conversation.
