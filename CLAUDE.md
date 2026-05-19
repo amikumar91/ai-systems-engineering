@@ -27,6 +27,7 @@ A personal knowledge base covering the full production AI systems engineering st
 | `image-finder` | Receives a specific diagram description from the scope brief; generates an Excalidraw JSON file (for rich, colorful, multi-tier diagrams) or a Mermaid code block (for simple flows) — no CC0 downloads, no SVGs |
 | `topic-writer` | Takes scope brief + research + practitioner + image; applies relevance filter; writes with concept ordering, cross-references, gotcha grouping, and date stamp |
 | `critic` | Reads the completed file; checks 12-point rubric (section completeness, format rules, gotcha relevance, code length, date stamp, cross-references); returns PASS or specific issues |
+| `demo-researcher` | Operates in two modes for the `/research-demo` command: discovery mode searches web and communities to suggest the best demo to build next; creation mode researches libraries, scenario, and production gotchas for a named demo |
 
 The `/research-topic` command orchestrates all five in a structured flow. You do not call subagents directly.
 
