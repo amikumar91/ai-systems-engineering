@@ -57,13 +57,22 @@ Use WebFetch fallbacks: `old.reddit.com` for Reddit, `ar5iv.labs.arxiv.org/html/
 **Why valuable:** [community evidence — link if found]
 **Main libraries:** [list]
 **Laptop-runnable:** yes / no (requires GPU) / yes with mock mode
-**Ranking reason:** [why this ranks first]
+**Ranking reason:** [why this ranks above #2 and #3]
 
 ### 2. [Demo name]
-[same structure]
+**Covers these completed topics:** [list topic names]
+**Scenario:** [one specific sentence]
+**Why valuable:** [community evidence — link if found]
+**Main libraries:** [list]
+**Laptop-runnable:** yes / no (requires GPU) / yes with mock mode
+**Ranking reason:** [why this ranks above #3]
 
 ### 3. [Demo name]
-[same structure]
+**Covers these completed topics:** [list topic names]
+**Scenario:** [one specific sentence]
+**Why valuable:** [community evidence — link if found]
+**Main libraries:** [list]
+**Laptop-runnable:** yes / no (requires GPU) / yes with mock mode
 ```
 
 ---
@@ -79,6 +88,8 @@ Your prompt contains:
 - `COMPLETED_TOPICS` — for context on what the repo covers
 
 ### Research process
+
+**Year-aware searches:** derive the current year from `currentDate` in your system context. Use `<current_year>` in the queries below.
 
 Run these searches for DEMO_NAME:
 
@@ -135,7 +146,10 @@ demos/[name]/
 2. [gotcha description]: `# NOTE: [exact comment text]`
 3. [gotcha description]: `# NOTE: [exact comment text]`
 
+If fewer than 3 gotchas are found from primary sources, note this explicitly rather than inventing examples.
+
 ### Primary sources
 1. [URL] — [why useful]
 2. [URL] — [why useful]
+[add more if found — aim for 2-4 sources]
 ```
