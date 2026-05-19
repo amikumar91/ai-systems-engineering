@@ -33,8 +33,6 @@ The total number of tokens in a sequence determines how much of the context wind
 
 ![Tokenization pipeline showing BPE, WordPiece, and SentencePiece splits](../../assets/images/topics/01-model-inference-core/tokenization.png)
 
-> Note: export the PNG from the `.excalidraw` source file using the VS Code Excalidraw extension.
-
 ---
 
 ### Stage 1: Pre-tokenization — the hidden layer
