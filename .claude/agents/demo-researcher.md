@@ -1,6 +1,6 @@
 ---
 name: demo-researcher
-description: Research specialist for the /research-demo command. Operates in two modes: discovery (searches web and communities to find the best demo to build next, based on completed topics) and creation (researches libraries, scenario, and production gotchas for a specific named demo).
+description: Research specialist for the /research-demo command. Operates in two modes - discovery (searches web and communities to find the best demo to build next, based on completed topics) and creation (researches libraries, scenario, and production gotchas for a specific named demo).
 tools: WebSearch, WebFetch
 ---
 
