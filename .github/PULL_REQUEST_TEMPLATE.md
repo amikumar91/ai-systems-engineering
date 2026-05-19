@@ -1,24 +1,29 @@
 ## What this PR does
-
-<!-- One sentence. -->
+<!-- One sentence -->
 
 ## Type
-
-- [ ] New topic (complete, not a placeholder)
+- [ ] New topic
 - [ ] Topic update / correction
 - [ ] New demo
+- [ ] Fix (typo, broken link, config)
 - [ ] Structural / tooling change
 
-## Checklist
+## File(s) changed
+<!-- e.g. topics/01-model-inference-core/tokenization.md -->
 
-- [ ] Topic file follows the template in `CLAUDE.md` (all 7 sections have real content)
-- [ ] `### Gotchas & production behavior` subsection is populated — not left empty
-- [ ] Sources are primary (paper, official docs, authoritative post) — not tutorial aggregators
-- [ ] Code snippet runs without errors (or is clearly marked as requiring GPU/API key)
-- [ ] Status icon updated in both `README.md` and `topics/<section>/README.md`
-- [ ] Progress counter updated in `README.md` if a topic moved to 🟢
-- [ ] Demo has a `requirements.txt` and runs without errors (if applicable)
+## Checklist
+- [ ] All 7 sections present with real content (not placeholders)
+- [ ] `### Gotchas & production behavior` has ≥ 3 sourced findings
+- [ ] Code snippet is ≤ 30 lines and runs (or marked `# REQUIRES:`)
+- [ ] Status icon updated in section README and main README
+- [ ] Progress counter updated in main README (if topic moved to 🟢)
+- [ ] No content from excluded scope (adjacent topics cross-referenced only)
 
 ## Sources used
+<!-- Mandatory — list 2-4 primary sources the content is based on -->
+1.
+2.
+3.
 
-<!-- List the 2-3 primary sources the content is based on -->
+## Critic result
+<!-- Paste PASS or the unresolved issues list from the critic subagent -->
