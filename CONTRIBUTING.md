@@ -1,27 +1,72 @@
 # Contributing
 
-This is a personal learning repo, but contributions are welcome — especially corrections, updated sources, and new topic suggestions.
+This repo is a personal knowledge base maintained by [@amikumar91](https://github.com/amikumar91) with AI agent assistance (Claude Code). All changes flow through a branch → PR → CI → merge pipeline.
 
-## Types of contributions
+---
 
-| Type | How |
-|------|-----|
-| Fix an error | Open an issue or PR with the correction and source |
-| Update outdated content | Open an issue with what changed and a link to the new source |
-| Suggest a new topic | Open an issue using the **New Topic Request** template |
-| Add a demo | PR with working code in `demos/<name>/` and a link from the topic file |
+## Branch naming
 
-## Topic file format
+| Change | Prefix | Example |
+|--------|--------|---------|
+| New or updated topic | `docs/` | `docs/rag-chunking-strategies` |
+| New demo scaffold | `demo/` | `demo/rag-with-eval` |
+| Small fix (typo, broken link) | `fix/` | `fix/kv-cache-broken-link` |
+| Config / tooling change | `chore/` | `chore/update-markdownlint-config` |
 
-Every topic file must follow the template in `CLAUDE.md`. Don't open a PR for a topic file that doesn't have real content in every section — placeholder PRs won't be merged.
+Rules: lowercase, hyphens only, no underscores, max 40 characters total including prefix.
 
-## Demos
+---
 
-- Python 3.10+
-- Working code, not stubs — the demo must run
-- Include a `requirements.txt` in the demo folder
-- Document build observations in the demo's `README.md`
+## Commit message format
 
-## Sources
+```
+docs: research and document <topic-name>
+feat: scaffold <demo-name> demo
+fix: <short description>
+chore: <short description>
+```
 
-Prefer primary sources: the original paper, the official docs, one authoritative engineering blog post. Avoid tutorial aggregators or content farms.
+---
+
+## Definition of done
+
+**A topic PR is ready when:**
+- All 7 sections have real content: What it is, How it works (+ Gotchas subsection), Why it matters, Key terms, Code/demo, My notes, Resources
+- `### Gotchas & production behavior` has ≥ 3 findings sourced from practitioner research
+- Code snippet is ≤ 30 lines and runs without GPU/API key, or is marked `# REQUIRES:`
+- Status icon updated in both `README.md` and `topics/<section>/README.md`
+- Progress counter in `README.md` incremented if topic moved to 🟢
+- Critic subagent returned PASS (or unresolved issues are listed in the PR body)
+
+**A demo PR is ready when:**
+- `README.md` has scenario description, topics covered list, and run instructions
+- `main.py` uses real library imports (not pseudocode or stubs)
+- `requirements.txt` has pinned versions
+- Infra-dependent steps are marked `# REQUIRES: <what>`
+- `README.md` Demos table updated with Topics column entry
+
+---
+
+## Slash commands
+
+| Command | What it does |
+|---------|-------------|
+| `/research-topic <name>` | Researches and writes a topic; creates branch and opens PR automatically |
+| `/research-demo [name]` | Discovers or scaffolds a demo; creates branch and opens PR automatically |
+| `/discover-topics` | Scans for missing topics, outdated content, and tooling gaps |
+
+All commands create a branch and open a PR automatically. Review and merge on GitHub.
+
+---
+
+## Auto-merge
+
+PRs on `fix/` and `chore/` branches labelled `auto-merge` merge automatically after CI passes. Topic (`docs/`) and demo (`demo/`) PRs always require human review before merge.
+
+---
+
+## GitHub Actions
+
+Two advisory checks run on every PR (both `continue-on-error: true` — they report but never block):
+- **markdownlint** — structural rules on `topics/**/*.md`
+- **lychee** — link checker on `topics/**/*.md` with 1-day cache
