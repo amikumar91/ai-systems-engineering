@@ -39,7 +39,7 @@ EXISTING_DEMOS:
 COMPLETED_TOPICS:
 [paste the COMPLETED_TOPICS list from Step 0]
 
-Find 2-3 demo candidates that best complement these completed topics and are not already covered by existing demos.
+Find 2-3 demo candidates that best complement these completed topics and are not already covered by existing demos. Return output in the structured format defined in your system prompt (## Demo candidates, ### 1 / ### 2 / ### 3 with all required fields).
 ```
 
 When the subagent returns, present its output to the user:
@@ -85,6 +85,9 @@ From COMPLETED_TOPICS, select the topics most relevant to DEMO_NAME. Aim for 3-6
 
 Wait for both A and B to complete before continuing.
 
+Set DESIGN_BRIEF = the full output returned by the demo-researcher subagent in Step 2A.
+Set RELATED_TOPICS = the list of topic display names and paths collected in Step 2B.
+
 ---
 
 ## Step 3 — Approval gate
@@ -96,17 +99,17 @@ Present this plan and wait for an explicit "yes":
 ```
 ## Demo plan: [DEMO_NAME]
 
-**Description:** [one sentence — what the demo does]
+**Description:** [one sentence from DESIGN_BRIEF Scenario]
 
-**Scenario:** [from design brief — specific, not vague]
+**Scenario:** [DESIGN_BRIEF Scenario — copy verbatim]
 
 **Files to create:**
 - `demos/[name]/README.md` — overview, run instructions, topics covered
-- `demos/[name]/main.py` — [description from brief]
+- `demos/[name]/main.py` — [description from DESIGN_BRIEF]
 - `demos/[name]/requirements.txt` — pinned dependencies
-[list any additional files from the design brief]
+[list any additional files from DESIGN_BRIEF]
 
-**Topics covered:**
+**Topics covered:** [from RELATED_TOPICS]
 - [Topic display name](topics/section/file.md)
 [one line per related topic from Step 2B]
 
@@ -116,7 +119,9 @@ Present this plan and wait for an explicit "yes":
 Confirm? (yes / no — or tell me what to change)
 ```
 
-If the user says no or requests changes: adjust the plan, re-present. Do not proceed until you receive an affirmative.
+If the user requests minor wording changes (description, file names): adjust inline and re-present.
+If the user requests scenario-level changes or a different demo: re-run Step 2 with the revised DEMO_NAME or constraints, then re-present Step 3.
+Do not proceed until you receive an affirmative.
 
 ---
 
@@ -126,10 +131,10 @@ Create `demos/[DEMO_NAME]/` with the following files.
 
 ### `demos/[DEMO_NAME]/README.md`
 
-```markdown
+````markdown
 # Demo: [DEMO_NAME]
 
-> [one-sentence description from design brief]
+> [one-sentence description from DESIGN_BRIEF]
 
 ## What this covers
 
@@ -143,33 +148,33 @@ Create `demos/[DEMO_NAME]/` with the following files.
 
 ```bash
 pip install -r requirements.txt
-[any additional setup from design brief — e.g., start server, export env vars]
+[any additional setup from DESIGN_BRIEF — e.g., start server, export env vars]
 python main.py
 ```
 
 ## Prerequisites
 
 - Python 3.10+
-[list infra requirements from design brief — one bullet per requirement]
+[list infra requirements from DESIGN_BRIEF — one bullet per requirement]
 
 ## Expected output
 
 ```
-[paste expected output from design brief]
+[paste expected output from DESIGN_BRIEF]
 ```
 
 ## Build notes
 
 > _Add observations here as you build it._
-```
+````
 
 ### `demos/[DEMO_NAME]/main.py`
 
-Use the sections from the design brief. Every section must:
+Use the sections from DESIGN_BRIEF. Every section must:
 - Import real libraries (not pseudocode or `import placeholder`)
 - Use realistic inputs (domain-appropriate content, not `"example text"`)
 - Mark infra requirements inline: `# REQUIRES: <what> — see README.md`
-- Embed the 3 gotchas from the design brief as `# NOTE:` comments at the relevant lines
+- Embed the 3 gotchas from DESIGN_BRIEF as `# NOTE:` comments at the relevant lines
 - Include a `USE_MOCK` env-var flag when a lightweight fallback exists
 
 Structure:
@@ -183,11 +188,11 @@ Docs:   README.md
 """
 
 import os
-[imports from design brief libraries — real packages only]
+[imports from DESIGN_BRIEF libraries — real packages only]
 
 USE_MOCK = os.getenv("USE_MOCK", "false").lower() == "true"
 
-# === [Section 1 name from brief] ===
+# === [Section 1 name from DESIGN_BRIEF] ===
 # [one-line description of what this section does]
 # REQUIRES: [infra requirement, or omit if none]
 
@@ -196,23 +201,25 @@ USE_MOCK = os.getenv("USE_MOCK", "false").lower() == "true"
 # === [Section 2 name] ===
 [section 2 code]
 
-[continue for all sections in the design brief]
+[continue for all sections in DESIGN_BRIEF]
 ```
 
 ### `demos/[DEMO_NAME]/requirements.txt`
 
-List each library from the design brief with its pinned version:
+List each library from DESIGN_BRIEF with its pinned version:
 
 ```
 [library]==[version]
 [library]==[version]
 ```
+
+If the design brief does not specify a version for a library, use the latest stable version from PyPI and note it with `# pinned YYYY-MM-DD`.
 
 ---
 
 ## Step 5 — Update README.md Demos table
 
-Open `README.md`. Find the Demos section (around line 333).
+Open `README.md`. Find the Demos section (search for `## Demos`).
 
 **If the table header is `| Demo | What it covers | Status |`** (3 columns), replace it and its separator with the 4-column version:
 
@@ -228,7 +235,7 @@ New:
 |------|----------------|--------|--------|
 ```
 
-Also update any existing rows that are missing the Topics column — insert a Topics cell before the Status cell. Use the topic links identified in Step 2B for the new demo; for existing stubs, derive topic links from their README.md "What this covers" descriptions.
+Also update any existing rows that are missing the Topics column — insert a Topics cell before the Status cell. Use the topic links identified in Step 2B for the new demo; for existing stubs, check their README.md "What this covers" descriptions and map to topic file paths where a clear match exists — if no clear match is found, leave the Topics cell empty rather than guessing a path.
 
 Add the new demo row:
 ```
