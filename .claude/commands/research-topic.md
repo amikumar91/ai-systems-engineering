@@ -65,8 +65,12 @@ Assemble a scope brief in this exact format. You will pass this verbatim to all 
 **Practitioner focus:** <copy from classification table above>
 **Practitioner exclude:** <copy from classification table above>
 
-**Diagram needed:** <A specific description of what visual would best serve this topic at this position in the learning sequence. Think: what does a reader need to SEE to understand this concept? For entry-point/overview topics: a landscape or spectrum diagram. For algorithm topics: a step-by-step flow. For tool topics: a configuration or data flow diagram.>
+**Diagrams needed:**
+- **Diagram 1 (Excalidraw or Mermaid):** <A specific description of the primary visual. For overview/conceptual topics: a colorful landscape, tier comparison, or semantic space diagram. For algorithm topics: a step-by-step Mermaid flow. For tool topics: a data flow or configuration diagram. Be specific about what to show — not just the topic name.>
+- **Diagram 2 (optional — add only when genuinely needed):** <If the concept has BOTH a landscape/comparative aspect AND a sequential/process aspect, describe a second diagram here. Leave blank if one diagram covers the topic adequately. Example: "Mermaid flow showing the step-by-step X process" as a complement to an Excalidraw overview.>
 ```
+
+**When to add Diagram 2:** Add it when the topic genuinely has two distinct visual needs that one diagram cannot serve — e.g., a conceptual space overview (Excalidraw) plus an operational pipeline flow (Mermaid). If in doubt, leave Diagram 2 blank; the topic-writer and image-finder will judge whether a second diagram adds value.
 
 ---
 
@@ -93,10 +97,11 @@ Prepend the scope brief, then ask it to:
 ### Dispatch image-finder subagent
 
 Prepend the scope brief, then ask it to:
-- Build a diagram matching the **diagram description** from the scope brief (not just the topic name)
+- Build diagrams matching the **Diagrams needed** section of the scope brief (not just the topic name)
+- If Diagram 1 and Diagram 2 are both specified, produce both — an Excalidraw file AND a Mermaid block
 - Use **Excalidraw JSON** for rich, colorful, multi-tier diagrams (landscape overviews, category comparisons, multi-column layouts); save to `assets/images/topics/<section>/<topic>.excalidraw`
-- Use **Mermaid code block** for simple flows, pipelines, and state machines
-- Return: generated Excalidraw file path + PNG embed code, OR Mermaid code block suggestion
+- Use **Mermaid code block** for flows, pipelines, and state machines — embedded directly in the topic file (no separate file needed)
+- Return all diagram results: Excalidraw file path + PNG embed code, and/or Mermaid block(s)
 - No CC0 image downloads, no SVG generation
 
 Wait for all three results before proceeding.
