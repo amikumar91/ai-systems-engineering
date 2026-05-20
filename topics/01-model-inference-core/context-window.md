@@ -66,6 +66,8 @@ flowchart TD
 
 → see [Autoregressive decoding](autoregressive-decoding.md) for how tokens are generated one at a time inside this budget.
 
+![Context window landscape: model context sizes, real-world token equivalents, and lost-in-the-middle accuracy curve](../../assets/images/topics/01-model-inference-core/context-window.png)
+
 ### Advertised vs. effective context length
 
 Context window sizes have grown dramatically: 4K (GPT-3.5, 2022) → 128K (GPT-4 Turbo, late 2023) → 1M (Gemini 1.5 Pro, 2024; GPT-4.1, 2025) → 10M (Llama 4 Scout, 2025). However, advertised size and usable size are not the same number.
