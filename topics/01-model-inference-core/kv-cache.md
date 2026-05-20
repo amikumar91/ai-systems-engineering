@@ -5,7 +5,7 @@ sidebar_position: 8
 
 > **Layer:** Model serving  
 > **Status:** 🟢 Notes written  
-> **Related:** [vLLM](vllm.md) · [Prefill / decode disaggregation](prefill-decode-disaggregation.md) · [KV cache-aware routing](../08-integration-cloud/kv-cache-aware-routing.md)
+> **Related:** [vLLM](../03-serving-infrastructure/vllm.md) · [Prefill / decode disaggregation](../03-serving-infrastructure/prefill-decode-disaggregation.md) · [KV cache-aware routing](../10-integration-cloud/kv-cache-aware-routing.md)
 
 ---
 
