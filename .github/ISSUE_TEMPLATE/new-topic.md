@@ -10,7 +10,7 @@ labels: new-topic
 
 ## Proposed section
 
-<!-- Which section does it fit? (01-model-inference-core, 05-agents-orchestration, etc.) -->
+<!-- Which section does it fit? (01-model-inference-core, 06-agents-orchestration, etc.) -->
 
 ## Why it belongs in the repo
 

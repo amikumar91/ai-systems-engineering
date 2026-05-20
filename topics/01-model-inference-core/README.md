@@ -26,4 +26,4 @@ Work through topics in the order below. Each one depends on the previous.
 
 ---
 
-**Next section →** [02 · Model Optimization](../02-model-optimization/README.md)
+**Next section →** [02 · Prompting & Control](../02-prompting-control/README.md)

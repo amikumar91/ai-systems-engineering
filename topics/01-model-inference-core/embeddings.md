@@ -92,7 +92,7 @@ MRL trains a single embedding model to produce valid representations at multiple
 
 OpenAI's `text-embedding-3` series exposes this directly — you can request dimension 256 via API parameter and receive a truncated but fully functional vector. Adaptive retrieval using this property — shortlisting with `d=32`, reranking with `d=512` — yields approximately 14× wall-clock speedup at equivalent accuracy.
 
-MRL is primarily relevant when using embeddings for retrieval. → see [Embedding models](../04-retrieval-memory/embedding-models.md) for full coverage.
+MRL is primarily relevant when using embeddings for retrieval. → see [Embedding models](../05-retrieval-memory/embedding-models.md) for full coverage.
 
 ### Reference: embedding dimensions by model
 

@@ -1,4 +1,4 @@
-?# 06 · Prompting & Control
+# 02 · Prompting & Control
 
 > **How you talk to the model.** High ROI — tackle this early. Good prompting technique pays off across every other section.
 
@@ -16,4 +16,4 @@
 
 ---
 
-**← Previous section:** [05 · Agents & Orchestration](../05-agents-orchestration/README.md) | **Next section →** [07 · Evaluation & Quality](../07-evaluation-quality/README.md)
+**← Previous section:** [01 · Model Inference Core](../01-model-inference-core/README.md) | **Next section →** [03 · Serving Infrastructure](../03-serving-infrastructure/README.md)

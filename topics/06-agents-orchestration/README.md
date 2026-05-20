@@ -1,4 +1,4 @@
-?# 05 · Agents & Orchestration
+# 06 · Agents & Orchestration
 
 > **Multi-step autonomous systems.** Concepts first, frameworks second — understand the patterns before picking the tools.
 
@@ -22,4 +22,4 @@
 
 ---
 
-**← Previous section:** [04 · Retrieval & Memory](../04-retrieval-memory/README.md) | **Next section →** [06 · Prompting & Control](../06-prompting-control/README.md)
+**← Previous section:** [05 · Retrieval & Memory](../05-retrieval-memory/README.md) | **Next section →** [07 · Safety, Alignment & Governance](../07-safety-governance/README.md)

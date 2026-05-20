@@ -63,12 +63,12 @@ See CLAUDE.md for the full section template every topic file follows.
 | Section | What it covers |
 |---------|----------------|
 | `topics/01-model-inference-core/` | Core LLM mechanics: tokenization, attention, KV cache, batching, decoding |
-| `topics/02-model-optimization/` | Quantization, fine-tuning, LoRA, RLHF, DPO, distillation |
+| `topics/02-prompting-control/` | Prompting, sampling, structured output, prompt versioning |
 | `topics/03-serving-infrastructure/` | vLLM, TGI, TensorRT-LLM, parallelism strategies, serving metrics |
-| `topics/04-retrieval-memory/` | RAG, vector DBs, chunking, hybrid search, GraphRAG, agent memory |
-| `topics/05-agents-orchestration/` | Agents, MCP, LangGraph, multi-agent, tool calling, A2A |
-| `topics/06-prompting-control/` | Prompting, sampling, structured output, prompt versioning |
-| `topics/07-evaluation-quality/` | RAGAS, LLM-as-judge, golden datasets, CI/CD eval gates |
-| `topics/08-observability-ops/` | LLMOps, tracing, drift, cost tracking, Langfuse, audit logs |
-| `topics/09-integration-cloud/` | Gateways, routing, streaming, cloud platforms, hybrid deployment |
-| `topics/10-safety-governance/` | Guardrails, PII, red-teaming, EU AI Act, NIST RMF |
+| `topics/04-model-optimization/` | Quantization, fine-tuning, LoRA, RLHF, DPO, distillation |
+| `topics/05-retrieval-memory/` | RAG, vector DBs, chunking, hybrid search, GraphRAG, agent memory |
+| `topics/06-agents-orchestration/` | Agents, MCP, LangGraph, multi-agent, tool calling, A2A |
+| `topics/07-safety-governance/` | Guardrails, PII, red-teaming, EU AI Act, NIST RMF |
+| `topics/08-evaluation-quality/` | RAGAS, LLM-as-judge, golden datasets, CI/CD eval gates |
+| `topics/09-observability-ops/` | LLMOps, tracing, drift, cost tracking, Langfuse, audit logs |
+| `topics/10-integration-cloud/` | Gateways, routing, streaming, cloud platforms, hybrid deployment |

@@ -60,7 +60,7 @@ Output in this exact format so changes can be reviewed before execution:
 
 | Section | Filename | Title | Why it matters | Priority |
 |---------|----------|-------|----------------|----------|
-| topics/05-agents-orchestration/ | voice-agents.md | Voice Agents | ... | high/medium/low |
+| topics/06-agents-orchestration/ | voice-agents.md | Voice Agents | ... | high/medium/low |
 
 ### Topics needing a research refresh
 

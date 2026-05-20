@@ -1,4 +1,4 @@
-?# 10 · Safety, Alignment & Governance
+# 07 · Safety, Alignment & Governance
 
 > **Keeping it trustworthy at scale.** Technical safety first (guardrails, red-teaming), then regulatory frameworks (EU AI Act, NIST RMF).
 
@@ -22,4 +22,4 @@
 
 ---
 
-**← Previous section:** [09 · Integration & Cloud](../09-integration-cloud/README.md)
+**← Previous section:** [06 · Agents & Orchestration](../06-agents-orchestration/README.md) | **Next section →** [08 · Evaluation & Quality](../08-evaluation-quality/README.md)

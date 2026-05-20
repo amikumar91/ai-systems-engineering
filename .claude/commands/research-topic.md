@@ -24,15 +24,15 @@ Derive the topic type from the section folder name:
 | Section folder | Topic type | Practitioner focus | Practitioner exclude |
 |----------------|------------|--------------------|----------------------|
 | `01-model-inference-core` | conceptual/algorithm | Mental model pitfalls, algorithm behavior edge cases, model selection gotchas, benchmark interpretation | Serving runtime bugs — belong in section 03 |
-| `02-model-optimization` | algorithm/technique | Training artifacts, quantization pitfalls, fine-tuning failure modes | Deployment/serving config — belong in section 03 |
+| `02-prompting-control` | technique | Prompt behavior artifacts, sampling edge cases, output format failures | Serving/infra bugs — belong in section 03 |
 | `03-serving-infrastructure` | infrastructure/tool | Runtime bugs, OOM errors, configuration issues, version regressions | Nothing excluded |
-| `04-retrieval-memory` | algorithm/system | Retrieval quality gotchas, chunking artifacts, indexing issues, embedding quality | Serving engine bugs — belong in section 03 |
-| `05-agents-orchestration` | orchestration/system | Agent failures, tool call bugs, loop behavior, state management | Serving runtime bugs — belong in section 03 |
-| `06-prompting-control` | technique | Prompt behavior artifacts, sampling edge cases, output format failures | Serving/infra bugs — belong in section 03 |
-| `07-evaluation-quality` | methodology | Eval correctness, metric validity, benchmark contamination, golden set drift | Serving runtime bugs — belong in section 03 |
-| `08-observability-ops` | tool/ops | Instrumentation gaps, tracing correctness, cost tracking pitfalls | Algorithm/model bugs — belong in sections 01/02 |
-| `09-integration-cloud` | integration/tool | Cloud-specific issues, gateway behavior, routing edge cases | Pure algorithm bugs — belong in sections 01/02 |
-| `10-safety-governance` | policy/algorithm | Guardrail failures, policy gaps, compliance edge cases | Serving runtime bugs — belong in section 03 |
+| `04-model-optimization` | algorithm/technique | Training artifacts, quantization pitfalls, fine-tuning failure modes | Deployment/serving config — belong in section 03 |
+| `05-retrieval-memory` | algorithm/system | Retrieval quality gotchas, chunking artifacts, indexing issues, embedding quality | Serving engine bugs — belong in section 03 |
+| `06-agents-orchestration` | orchestration/system | Agent failures, tool call bugs, loop behavior, state management | Serving runtime bugs — belong in section 03 |
+| `07-safety-governance` | policy/algorithm | Guardrail failures, policy gaps, compliance edge cases | Serving runtime bugs — belong in section 03 |
+| `08-evaluation-quality` | methodology | Eval correctness, metric validity, benchmark contamination, golden set drift | Serving runtime bugs — belong in section 03 |
+| `09-observability-ops` | tool/ops | Instrumentation gaps, tracing correctness, cost tracking pitfalls | Algorithm/model bugs — belong in sections 01/04 |
+| `10-integration-cloud` | integration/tool | Cloud-specific issues, gateway behavior, routing edge cases | Pure algorithm bugs — belong in sections 01/04 |
 
 ### 0d. Build the DO-NOT-cover list
 
