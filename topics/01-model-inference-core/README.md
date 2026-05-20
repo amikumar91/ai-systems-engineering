@@ -12,7 +12,7 @@ Work through topics in the order below. Each one depends on the previous.
 | 4 | [Transformer architecture](transformer.md) | The encoder-decoder architecture that underlies every modern LLM | 🟢 |
 | 5 | [Attention mechanism](attention-mechanism.md) | How the model relates every token to every other token | 🟢 |
 | 6 | [Context window](context-window.md) | Why there's a limit and what happens when you hit it | 🟢 |
-| 7 | [Autoregressive decoding](autoregressive-decoding.md) | How the model generates one token at a time | 🔴 |
+| 7 | [Autoregressive decoding](autoregressive-decoding.md) | How the model generates one token at a time | 🟢 |
 | 8 | [KV cache](kv-cache.md) | How intermediate attention state is cached to avoid recomputing | 🔴 |
 | 9 | [TTFT & TBT metrics](ttft-tbt-metrics.md) | Time to first token and time between tokens — how you measure inference speed | 🔴 |
 | 10 | [Continuous batching](continuous-batching.md) | How multiple requests share the GPU without waiting for each other | 🔴 |

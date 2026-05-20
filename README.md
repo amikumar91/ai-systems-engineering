@@ -8,11 +8,11 @@
 
 ## Progress
 
-**5 / 136 topics complete** — see the learning map below for what's done and what's next.
+**6 / 136 topics complete** — see the learning map below for what's done and what's next.
 
 | Section | Done | Total |
 |---------|------|-------|
-| 01 · Model inference core | 5 | 17 |
+| 01 · Model inference core | 6 | 17 |
 | 02 · Prompting & control | 0 | 9 |
 | 03 · Serving infrastructure | 0 | 15 |
 | 04 · Model optimization | 0 | 11 |
@@ -107,8 +107,8 @@ Sections are in recommended study order. Topics within each section go foundatio
 | 3 | [Embeddings](topics/01-model-inference-core/embeddings.md) | 🟢 | |
 | 4 | [Transformer architecture](topics/01-model-inference-core/transformer.md) | 🟢 | |
 | 5 | [Attention mechanism](topics/01-model-inference-core/attention-mechanism.md) | 🟢 | |
-| 6 | [Context window](topics/01-model-inference-core/context-window.md) | 🔴 | |
-| 7 | [Autoregressive decoding](topics/01-model-inference-core/autoregressive-decoding.md) | 🔴 | |
+| 6 | [Context window](topics/01-model-inference-core/context-window.md) | 🟢 | |
+| 7 | [Autoregressive decoding](topics/01-model-inference-core/autoregressive-decoding.md) | 🟢 | |
 | 8 | [KV cache](topics/01-model-inference-core/kv-cache.md) | 🔴 | |
 | 9 | [TTFT & TBT — inference latency metrics](topics/01-model-inference-core/ttft-tbt-metrics.md) | 🔴 | |
 | 10 | [Continuous batching](topics/01-model-inference-core/continuous-batching.md) | 🔴 | |
