@@ -1,4 +1,4 @@
-?# 04 · Retrieval & Memory
+# 05 · Retrieval & Memory
 
 > **Grounding models in your data.** RAG and its building blocks — how to connect a model to external knowledge and give agents persistent memory.
 
@@ -19,4 +19,4 @@
 
 ---
 
-**← Previous section:** [03 · Serving Infrastructure](../03-serving-infrastructure/README.md) | **Next section →** [05 · Agents & Orchestration](../05-agents-orchestration/README.md)
+**← Previous section:** [04 · Model Optimization & Formats](../04-model-optimization/README.md) | **Next section →** [06 · Agents & Orchestration](../06-agents-orchestration/README.md)

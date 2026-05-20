@@ -102,15 +102,15 @@ Two diagram tools only — no SVG generation, no CC0 image downloads:
 | Folder | Architecture layer | What it covers |
 |--------|-------------------|----------------|
 | `topics/01-model-inference-core/` | Model serving | Tokenization, attention, KV cache, batching, decoding — the core mechanics |
-| `topics/02-model-optimization/` | Model serving | Quantization, fine-tuning, LoRA, RLHF, DPO, distillation, model merging |
+| `topics/02-prompting-control/` | Orchestration | Prompting techniques, sampling parameters, structured output, versioning |
 | `topics/03-serving-infrastructure/` | Model serving | Inference engines (vLLM, TGI, TensorRT-LLM), parallelism, serving metrics |
-| `topics/04-retrieval-memory/` | Data & memory | RAG, vector DBs, chunking, hybrid search, GraphRAG, agent memory |
-| `topics/05-agents-orchestration/` | Orchestration | Agents, MCP, LangGraph, multi-agent, tool calling, A2A protocol |
-| `topics/06-prompting-control/` | Orchestration | Prompting techniques, sampling parameters, structured output, versioning |
-| `topics/07-evaluation-quality/` | Eval & obs | RAGAS, LLM-as-judge, golden datasets, CI/CD eval gates, regression testing |
-| `topics/08-observability-ops/` | Eval & obs | LLMOps, tracing, drift detection, cost tracking, Langfuse, audit logs |
-| `topics/09-integration-cloud/` | Clients & gateway | Gateways, routing, streaming, cloud platforms, hybrid deployment |
-| `topics/10-safety-governance/` | Governance | Guardrails, PII, red-teaming, EU AI Act, NIST RMF, responsible AI |
+| `topics/04-model-optimization/` | Model serving | Quantization, fine-tuning, LoRA, RLHF, DPO, distillation, model merging |
+| `topics/05-retrieval-memory/` | Data & memory | RAG, vector DBs, chunking, hybrid search, GraphRAG, agent memory |
+| `topics/06-agents-orchestration/` | Orchestration | Agents, MCP, LangGraph, multi-agent, tool calling, A2A protocol |
+| `topics/07-safety-governance/` | Governance | Guardrails, PII, red-teaming, EU AI Act, NIST RMF, responsible AI |
+| `topics/08-evaluation-quality/` | Eval & obs | RAGAS, LLM-as-judge, golden datasets, CI/CD eval gates, regression testing |
+| `topics/09-observability-ops/` | Eval & obs | LLMOps, tracing, drift detection, cost tracking, Langfuse, audit logs |
+| `topics/10-integration-cloud/` | Clients & gateway | Gateways, routing, streaming, cloud platforms, hybrid deployment |
 
 ---
 

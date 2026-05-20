@@ -1,4 +1,4 @@
-?# 02 · Model Optimization & Formats
+# 04 · Model Optimization & Formats
 
 > **Making models smaller and faster.** Study section 01 first — you need to understand what a model is before learning how to shrink or adapt it.
 
@@ -18,4 +18,4 @@
 
 ---
 
-**← Previous section:** [01 · Model Inference Core](../01-model-inference-core/README.md) | **Next section →** [03 · Serving Infrastructure](../03-serving-infrastructure/README.md)
+**← Previous section:** [03 · Serving Infrastructure](../03-serving-infrastructure/README.md) | **Next section →** [05 · Retrieval & Memory](../05-retrieval-memory/README.md)

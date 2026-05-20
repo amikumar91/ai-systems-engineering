@@ -1,4 +1,4 @@
-?# 08 · Observability & Ops (LLMOps)
+# 09 · Observability & Ops (LLMOps)
 
 > **Running it in production reliably.** Tracing, cost tracking, drift detection, and the tooling ecosystem that keeps LLM systems healthy.
 
@@ -21,4 +21,4 @@
 
 ---
 
-**← Previous section:** [07 · Evaluation & Quality](../07-evaluation-quality/README.md) | **Next section →** [09 · Integration & Cloud](../09-integration-cloud/README.md)
+**← Previous section:** [08 · Evaluation & Quality](../08-evaluation-quality/README.md) | **Next section →** [10 · Integration & Cloud](../10-integration-cloud/README.md)

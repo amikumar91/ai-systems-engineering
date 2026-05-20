@@ -22,4 +22,4 @@
 
 ---
 
-**← Previous section:** [02 · Model Optimization](../02-model-optimization/README.md) | **Next section →** [04 · Retrieval & Memory](../04-retrieval-memory/README.md)
+**← Previous section:** [02 · Prompting & Control](../02-prompting-control/README.md) | **Next section →** [04 · Model Optimization & Formats](../04-model-optimization/README.md)

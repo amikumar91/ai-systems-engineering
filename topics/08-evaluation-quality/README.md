@@ -1,4 +1,4 @@
-?# 07 · Evaluation & Quality
+# 08 · Evaluation & Quality
 
 > **Measuring what the model actually does.** Frameworks, metrics, and CI/CD patterns for knowing when your system is working — and when it regresses.
 
@@ -20,4 +20,4 @@
 
 ---
 
-**← Previous section:** [06 · Prompting & Control](../06-prompting-control/README.md) | **Next section →** [08 · Observability & Ops](../08-observability-ops/README.md)
+**← Previous section:** [07 · Safety, Alignment & Governance](../07-safety-governance/README.md) | **Next section →** [09 · Observability & Ops](../09-observability-ops/README.md)

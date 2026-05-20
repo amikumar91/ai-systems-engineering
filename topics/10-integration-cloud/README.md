@@ -1,4 +1,4 @@
-?# 09 · Integration & Cloud
+# 10 · Integration & Cloud
 
 > **Connecting to your existing stack.** Gateways, routing, streaming, cloud provider specifics, and deployment topology.
 
@@ -22,4 +22,4 @@
 
 ---
 
-**← Previous section:** [08 · Observability & Ops](../08-observability-ops/README.md) | **Next section →** [10 · Safety & Governance](../10-safety-governance/README.md)
+**← Previous section:** [09 · Observability & Ops](../09-observability-ops/README.md)
