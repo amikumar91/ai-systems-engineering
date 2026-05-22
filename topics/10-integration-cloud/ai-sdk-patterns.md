@@ -1,7 +1,7 @@
 ---
-id: ai-sdk-patterns
 title: AI SDK Patterns
 sidebar_label: AI SDK patterns
+sidebar_position: 16
 ---
 
 # AI SDK Patterns

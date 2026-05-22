@@ -144,16 +144,13 @@ focused trail based on what you're trying to do — not what section something l
 | 23 | [Offline vs Online Eval](../08-evaluation-quality/offline-vs-online-eval.md) | 08 |
 | 24 | [Golden Dataset](../08-evaluation-quality/golden-dataset.md) | 08 |
 
-### New Topics (additions to the original 136)
-
-These three topics are not in the original section files. Stub files are added
-under `extras/` — see below.
+### New Patterns
 
 | # | Topic | File |
 |---|-------|------|
-| 25 | AI SDK Patterns | [extras/ai-sdk-patterns.md](./extras/ai-sdk-patterns.md) |
-| 26 | Webhook vs Streaming vs Polling | [extras/webhook-vs-streaming-vs-polling.md](./extras/webhook-vs-streaming-vs-polling.md) |
-| 27 | Context Management Patterns | [extras/context-management-patterns.md](./extras/context-management-patterns.md) |
+| 25 | AI SDK Patterns | [10-integration-cloud/ai-sdk-patterns.md](../10-integration-cloud/ai-sdk-patterns.md) |
+| 26 | Webhook vs Streaming vs Polling | [10-integration-cloud/webhook-vs-streaming-vs-polling.md](../10-integration-cloud/webhook-vs-streaming-vs-polling.md) |
+| 27 | Context Management Patterns | [02-prompting-control/context-management-patterns.md](../02-prompting-control/context-management-patterns.md) |
 | 28 | [PII Redaction](../07-safety-governance/pii-redaction.md) | 07 |
 
 ---

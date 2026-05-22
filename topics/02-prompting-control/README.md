@@ -13,6 +13,7 @@
 | 7 | [Prompt versioning](prompt-versioning.md) | Managing prompts like code — version control, rollback, A/B testing | 🔴 |
 | 8 | [Constitutional AI](constitutional-ai.md) | Self-critique and revision loops to align model output with principles | 🔴 |
 | 9 | [System card](system-card.md) | The documentation artifact that describes a model's intended use and limitations | 🔴 |
+| 10| [Context Management Patterns](context-management-patterns.md)| Handle long conversations, sliding windows, and token budgets in production. | 🔴 |
 
 ---
 

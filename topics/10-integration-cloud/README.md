@@ -19,7 +19,8 @@
 | 13 | [Data sovereignty](data-sovereignty.md) | Legal and architectural constraints on where model data can go | 🔴 |
 | 14 | [VPC & private endpoint](vpc-private-endpoint.md) | Keeping LLM traffic inside your network perimeter | 🔴 |
 | 15 | [On-prem & hybrid deployment](on-prem-hybrid.md) | Running models on your own hardware alongside cloud capacity | 🔴 |
-
+| 16 | [AI SDK Patterns](ai-sdk-patterns.md) | Vercel AI SDK, Anthropic SDK, OpenAI SDK. | 🔴 |
+| 17 | [Webhook vs Streaming vs Polling](webhook-vs-streaming-vs-polling.md) | Patterns for receiving AI responses — tradeoffs for real integrations | 🔴 |
 ---
 
 **← Previous section:** [09 · Observability & Ops](../09-observability-ops/README.md)

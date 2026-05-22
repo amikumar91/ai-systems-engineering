@@ -32,6 +32,7 @@ const config = {
           path: 'topics',
           routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
+          exclude: ['**/learning-paths/extras/**'],
         },
         blog: false,
         theme: {

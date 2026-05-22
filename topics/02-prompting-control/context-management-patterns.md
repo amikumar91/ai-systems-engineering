@@ -1,7 +1,7 @@
 ---
-id: context-management-patterns
 title: Context Management Patterns
 sidebar_label: Context management patterns
+sidebar_position: 10
 ---
 
 # Context Management Patterns

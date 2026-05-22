@@ -55,6 +55,30 @@
   color: #fff !important;
 }
 
+.heroCtas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.heroCtaSecondary {
+  display: inline-block;
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-primary);
+  text-decoration: none !important;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.heroCtaSecondary:hover {
+  background: var(--ifm-color-primary);
+  color: #fff !important;
+}
+
 /* ── Divider ── */
 .divider {
   height: 1px;
@@ -159,6 +183,13 @@
   padding: 24px;
   background: var(--ifm-background-color);
   overflow-x: auto;
+}
+
+.archImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 /* ── Responsive ── */

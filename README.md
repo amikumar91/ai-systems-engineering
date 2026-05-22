@@ -83,6 +83,7 @@ Topics within each section go foundational → advanced.
 | 7 | [Prompt versioning](topics/02-prompting-control/prompt-versioning.md) | 🔴 |
 | 8 | [Constitutional AI](topics/02-prompting-control/constitutional-ai.md) | 🔴 |
 | 9 | [System card](topics/02-prompting-control/system-card.md) | 🔴 |
+| 10| [Context Management Patterns](topics/02-prompting-control/context-management-patterns.md)| 🔴 |
 
 ---
 
@@ -257,7 +258,8 @@ Topics within each section go foundational → advanced.
 | 13 | [Data sovereignty](topics/10-integration-cloud/data-sovereignty.md) | 🔴 |
 | 14 | [VPC & private endpoint](topics/10-integration-cloud/vpc-private-endpoint.md) | 🔴 |
 | 15 | [On-prem & hybrid deployment](topics/10-integration-cloud/on-prem-hybrid.md) | 🔴 |
-
+| 16 | [AI SDK Patterns](topics/10-integration-cloud/ai-sdk-patterns.md) | 🔴 |
+| 17 | [Webhook vs Streaming vs Polling](topics/10-integration-cloud/webhook-vs-streaming-vs-polling.md) | 🔴 |
 ---
 
 ## Demos
