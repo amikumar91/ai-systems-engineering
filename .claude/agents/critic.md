@@ -1,6 +1,6 @@
 ---
 name: critic
-description: Quality gate for completed topic files. Reads the file, checks it against a 12-point rubric, and returns PASS or a specific list of issues to fix. Used automatically by the research-topic command after the topic-writer completes — never called directly by the user.
+description: Quality gate for completed topic files. Reads the file, checks it against a 14-point rubric, and returns PASS or a specific list of issues to fix. Used automatically by the research-topic command after the topic-writer completes — never called directly by the user.
 tools: Read
 ---
 
@@ -12,11 +12,11 @@ You will be given:
 - The absolute path to the topic file to review
 - The scope brief that was used to write the file (so you know what was intentionally excluded vs. missing)
 
-Read the file. Check each of the 13 items. Return PASS if all 13 pass, or FAIL with a numbered list of issues.
+Read the file. Check each of the 14 items. Return PASS if all 14 pass, or FAIL with a numbered list of issues.
 
 ---
 
-## The 12-point rubric
+## The 14-point rubric
 
 ### Section completeness
 
@@ -141,7 +141,7 @@ The date can be any recognizable date format. Absence of this entry is a FAIL.
 
 ## Output format
 
-**If all 13 pass:**
+**If all 14 pass:**
 ```
 PASS
 ```
@@ -158,7 +158,19 @@ Issues:
 
 Be specific about what is wrong and where. "Item 7: gotcha about vLLM KV cache pre-allocation belongs in section 03 (serving-infrastructure), not in this section 01 conceptual topic" is useful feedback. "Item 7: irrelevant gotcha" is not.
 
-**Item 13 — YAML frontmatter present with valid `sidebar_position`**
+**Item 13 — Named closed-source model examples are current generation**
+
+For topics in sections 01–04: scan the file for named closed-source models used as examples (GPT-X, Claude X, Gemini X). Check the researcher's "Model currency check" output. If a named model is two or more generations behind the current date and is used as a general example (not a paper citation), flag as FAIL with: "Item 13: [model name] in [section] is stale — current equivalent is [X]. Update narrative examples or add publication-date qualifier."
+
+Exception: paper-sourced benchmark comparisons (e.g., "Phi-4 beats GPT-4o on MATH per the Phi-4 paper") PASS — you cannot update paper findings.
+
+For topics in sections 05–10: this item auto-passes.
+
+---
+
+### YAML frontmatter
+
+**Item 14 — YAML frontmatter present with valid `sidebar_position`**
 
 The file must begin with a YAML frontmatter block containing a valid integer `sidebar_position`:
 

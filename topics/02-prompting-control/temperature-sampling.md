@@ -159,7 +159,7 @@ The choice of sampling strategy also gates the next decision in this sequence: o
 | Term | Meaning |
 |------|---------|
 | Logit | The raw unnormalized score a model produces for each vocabulary token before any probability conversion |
-| Temperature (T) | Scalar divisor applied to logits before softmax; T<1 sharpens the distribution, T>1 flattens it |
+| Temperature (T) | Scalar divisor applied to logits before softmax; T&lt;1 sharpens the distribution, T&gt;1 flattens it |
 | Greedy decoding | T=0 behavior — always select the single highest-probability token; deterministic but repetition-prone |
 | Nucleus (top-p) | The smallest prefix set of tokens whose cumulative probability meets or exceeds p; its size is dynamic |
 | Top-k | A hard cap retaining only the k highest-probability tokens before sampling; insensitive to distribution shape |

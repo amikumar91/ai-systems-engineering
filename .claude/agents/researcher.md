@@ -88,6 +88,13 @@ Return a structured research brief:
 ### What's changed recently
 <Anything new in the last 1-2 years the existing doc might miss>
 
+### Model currency check (topics in sections 01–04 only)
+If your research brief names specific closed-source models as examples (OpenAI, Anthropic, Google families), verify these are current generation using a targeted search: `"<model family> latest model <current_year>"`.
+Flag any named model that is two or more generations old as:
+⚠ STALE EXAMPLE — replace with current equivalent or note paper-publication date.
+Closed-source models don't publish parameter counts — do NOT attempt to add them to tables that track architecture metrics (active vs. total params).
+Only replace narrative examples, not paper-sourced benchmark comparisons.
+
 ### Adjacent concepts (brief mention only)
 <List any concepts from the DO-NOT-cover list that appeared in research, with a one-sentence context note and a flag that the topic-writer should cross-reference, not explain>
 
