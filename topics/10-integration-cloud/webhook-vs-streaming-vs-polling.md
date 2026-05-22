@@ -1,7 +1,7 @@
 ---
-id: webhook-vs-streaming-vs-polling
 title: Webhook vs Streaming vs Polling
 sidebar_label: Webhook vs streaming vs polling
+sidebar_position: 17
 ---
 
 # Webhook vs Streaming vs Polling
