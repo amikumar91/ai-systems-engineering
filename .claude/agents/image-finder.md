@@ -30,10 +30,10 @@ A topic file can and should have multiple diagrams. Ask: does this topic have bo
 | Algorithm with numbered stages (encode → store → retrieve) | **Mermaid** |
 
 **Default by topic type:**
-- `conceptual-overview` (section 01, 02) → **Excalidraw** for the overview + **Mermaid** for any sequential process embedded in the concept
-- `algorithm` (section 01, 02, 04) → **Mermaid** for the steps + **Excalidraw** if the algorithm also needs a category/tier overview
-- `tool / ops / integration` (sections 03, 08, 09) → **Mermaid** primary; add Excalidraw if the tool has a multi-tier architecture to compare
-- `orchestration` (section 05) → **Mermaid** for agent loops and tool-call flows; add Excalidraw if there is a component landscape to compare
+- `conceptual-overview` (sections 01, 02) → **Excalidraw** for the overview + **Mermaid** for any sequential process embedded in the concept
+- `algorithm` (sections 01, 02, 04) → **Mermaid** for the steps + **Excalidraw** if the algorithm also needs a category/tier overview
+- `tool / ops / integration` (sections 03, 09, 10) → **Mermaid** primary; add Excalidraw if the tool has a multi-tier architecture to compare
+- `orchestration` (section 06) → **Mermaid** for agent loops and tool-call flows; add Excalidraw if there is a component landscape to compare
 
 **Produce both when:**
 - The scope brief specifies two diagram descriptions (Diagram 1 and Diagram 2)

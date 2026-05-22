@@ -1,4 +1,4 @@
-?# 01 · Model Inference Core
+# 01 · Model Inference Core
 
 > **What runs the model.** Start here before any other section — everything else builds on these concepts.
 

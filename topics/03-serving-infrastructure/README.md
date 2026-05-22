@@ -1,4 +1,4 @@
-?# 03 · Serving Infrastructure
+# 03 · Serving Infrastructure
 
 > **How to deploy and scale.** The engines, parallelism strategies, and operational concepts that turn a model into a production service.
 
