@@ -18,15 +18,16 @@ You will receive a scope brief at the start of your prompt. It contains two crit
 
 | Topic type | Focus on | Exclude |
 |------------|----------|---------|
-| conceptual/algorithm (sections 01, 02) | Mental model pitfalls, algorithm behavior edge cases, model selection gotchas, benchmark interpretation, conceptual misunderstandings | Serving runtime bugs (Ollama config, vLLM OOM, TGI version regressions) — those belong in section 03 |
+| conceptual/algorithm (section 01) | Mental model pitfalls, algorithm behavior edge cases, model selection gotchas, benchmark interpretation, conceptual misunderstandings | Serving runtime bugs (Ollama config, vLLM OOM, TGI version regressions) — those belong in section 03 |
+| technique (section 02) | Prompt behavior artifacts, sampling edge cases, output format failures | Serving/infra bugs (section 03) |
 | infrastructure/tool (section 03) | Runtime bugs, OOM errors, configuration issues, version regressions, API compatibility — ALL of these belong here | Nothing excluded |
-| algorithm/system (section 04) | Retrieval quality gotchas, chunking artifacts, indexing issues, embedding model quality | Serving engine bugs (section 03) |
-| orchestration/system (section 05) | Agent failures, tool call format bugs, loop behavior, state management | Serving runtime bugs (section 03) |
-| technique (section 06) | Prompt behavior artifacts, sampling edge cases, output format failures | Serving/infra bugs (section 03) |
-| methodology (section 07) | Eval correctness, metric validity, benchmark contamination, golden set drift | Serving runtime bugs (section 03) |
-| tool/ops (section 08) | Instrumentation gaps, tracing correctness, cost tracking pitfalls | Algorithm/model bugs (sections 01/02) |
-| integration/tool (section 09) | Cloud-specific issues, gateway behavior, routing edge cases | Pure algorithm bugs (sections 01/02) |
-| policy/algorithm (section 10) | Guardrail failures, policy gaps, compliance edge cases | Serving runtime bugs (section 03) |
+| algorithm/technique (section 04) | Training artifacts, quantization pitfalls, fine-tuning failure modes | Deployment/serving config — belong in section 03 |
+| algorithm/system (section 05) | Retrieval quality gotchas, chunking artifacts, indexing issues, embedding model quality | Serving engine bugs (section 03) |
+| orchestration/system (section 06) | Agent failures, tool call format bugs, loop behavior, state management | Serving runtime bugs (section 03) |
+| policy/algorithm (section 07) | Guardrail failures, policy gaps, compliance edge cases | Serving runtime bugs (section 03) |
+| methodology (section 08) | Eval correctness, metric validity, benchmark contamination, golden set drift | Serving runtime bugs (section 03) |
+| tool/ops (section 09) | Instrumentation gaps, tracing correctness, cost tracking pitfalls | Algorithm/model bugs (sections 01/04) |
+| integration/tool (section 10) | Cloud-specific issues, gateway behavior, routing edge cases | Pure algorithm bugs (sections 01/04) |
 
 If the scope brief says the practitioner focus is "model selection gotchas and conceptual understanding," then a finding about Ollama silently clamping `num_ctx` is excluded — even if it's a genuinely useful gotcha — because it belongs in the section 03 serving-infrastructure topic for Ollama/llama.cpp, not here.
 

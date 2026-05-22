@@ -8,13 +8,20 @@ This repo is designed to be used with Claude Code as a research and documentatio
 
 | Command | What it does |
 |---------|-------------|
-| `/research-topic <name>` | Research a topic end-to-end: web search → write doc → add Mermaid diagram → update README status → commit |
+| `/research-topic <name>` | Research a topic end-to-end: web search → write doc → diagram → update README status → commit → open PR |
+| `/discover-topics` | Scan the ecosystem for missing topics, outdated content, and tooling gaps across all 10 sections |
+| `/research-demo [name]` | Without a name: suggests the best demo to build next. With a name: scaffolds a runnable `demos/<name>/` folder with `README.md` and `requirements.txt` |
 
 **Example usage:**
 ```
 /research-topic speculative decoding
 /research-topic A2A protocol
 /research-topic DPO & GRPO
+
+/discover-topics
+
+/research-demo
+/research-demo rag-pipeline
 ```
 
 ---
@@ -23,9 +30,9 @@ This repo is designed to be used with Claude Code as a research and documentatio
 
 1. Find the topic in README.md — it will have a 🔴 status and link to a placeholder file
 2. Run `/research-topic <topic name>` in Claude Code
-3. Claude will: search the web + papers, write the full doc, generate a diagram, update the status icon, and commit
-4. Review the result — add your own observations to `## My notes`
-5. If a demo is needed, build it in `demos/` and link it from `## Code / demo`
+3. Claude will: create a branch → research with specialist subagents → write the doc → generate a diagram → run the critic quality gate → update status icons → commit → open a PR
+4. Review the PR — merge when satisfied, or add your own observations to `## My notes` first
+5. If a demo is needed, run `/research-demo <name>` to scaffold it in `demos/`
 
 ---
 

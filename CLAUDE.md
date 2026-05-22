@@ -33,7 +33,7 @@ The `/research-topic` command orchestrates the first five agents in a structured
 
 ### MCP servers (`.claude/settings.json`)
 
-- **GitHub MCP** — requires `GITHUB_PERSONAL_ACCESS_TOKEN` env var. Enables PR management, issue creation, and code search directly from Claude Code.
+- **GitHub MCP** — set `GITHUB_TOKEN` in your environment (settings.json maps it to `GITHUB_PERSONAL_ACCESS_TOKEN` for the server). Enables PR management, issue creation, and code search directly from Claude Code.
 - Keep total active MCP tools under ~40 to avoid tool selection degradation.
 
 ### Personal settings

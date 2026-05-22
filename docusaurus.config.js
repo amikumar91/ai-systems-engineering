@@ -53,6 +53,11 @@ const config = {
         hideOnScroll: false,
         items: [
           {
+            to: '/docs/learning-paths',
+            label: 'Learning Paths',
+            position: 'left',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'topicsSidebar',
             position: 'left',
