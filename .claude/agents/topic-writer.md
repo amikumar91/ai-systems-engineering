@@ -227,6 +227,7 @@ If the file already has real content (status 🟢 or 🟡):
 3. Update "Gotchas & production behavior" with new findings from the practitioner agent — prepend new items rather than replacing existing ones
 4. If "How it works" is outdated based on research findings, rewrite it
 5. Replace the date stamp with the current date
+6. **Model currency pass** — scan for closed-source model names used as examples. If the researcher flagged any as stale (⚠ STALE EXAMPLE), replace them with current equivalents. Preserve paper-sourced benchmark numbers with an inline qualifier: "(vs. models available at publication, [paper publication date])".
 
 ---
 
