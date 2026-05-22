@@ -36,7 +36,7 @@ focused trail based on what you're trying to do — not what section something l
 | 4 | [Context Window](../01-model-inference-core/context-window.md) | 01 | ✅ Done |
 | 5 | [Autoregressive Decoding](../01-model-inference-core/autoregressive-decoding.md) | 01 | ✅ Done |
 | 6 | [Prompt Engineering](../02-prompting-control/prompt-engineering.md) | 02 | ✅ Done |
-| 7 | [Temperature, Top-p & Sampling](../02-prompting-control/temperature-sampling.md) | 02 | 🔴 Not started |
+| 7 | [Temperature, Top-p & Sampling](../02-prompting-control/temperature-sampling.md) | 02 | ✅ Done |
 
 ---
 
