@@ -21,12 +21,12 @@
 
 ## Progress
 
-**7 / 136 topics complete** — 🔴 not started · 🟡 in progress · 🟢 done · 🔨 demo built
+**8 / 136 topics complete** — 🔴 not started · 🟡 in progress · 🟢 done · 🔨 demo built
 
 | Section | Done | Total |
 |---------|------|-------|
 | 01 · Model inference core | 7 | 17 |
-| 02 · Prompting & control | 0 | 9 |
+| 02 · Prompting & control | 1 | 9 |
 | 03 · Serving infrastructure | 0 | 15 |
 | 04 · Model optimization | 0 | 11 |
 | 05 · Retrieval & memory | 0 | 12 |
@@ -75,7 +75,7 @@ Topics within each section go foundational → advanced.
 | # | Topic | Status |
 |---|-------|--------|
 | 1 | [System prompt](topics/02-prompting-control/system-prompt.md) | 🔴 |
-| 2 | [Prompt engineering](topics/02-prompting-control/prompt-engineering.md) | 🔴 |
+| 2 | [Prompt engineering](topics/02-prompting-control/prompt-engineering.md) | 🟢 |
 | 3 | [Few-shot & zero-shot](topics/02-prompting-control/few-shot-zero-shot.md) | 🔴 |
 | 4 | [In-context learning (ICL)](topics/02-prompting-control/in-context-learning.md) | 🔴 |
 | 5 | [Temperature, Top-p & sampling](topics/02-prompting-control/temperature-sampling.md) | 🔴 |
