@@ -172,7 +172,7 @@ Do not prompt the user during this loop. The entire rewrite cycle is silent.
 
 ---
 
-## Step 6 — Update README.md and section README
+## Step 6 — Update README.md, section README, and learning-paths index
 
 In the main `README.md`:
 - If the topic was 🔴, change to 🟢
@@ -183,14 +183,30 @@ In the main `README.md`:
 In the section's `topics/<section>/README.md`:
 - Update the status icon for this topic
 
+In `topics/learning-paths/index.md`:
+- Search for the topic's filename (e.g., `structured-output.md`) in the file
+- If a matching row is found, update its status column: replace `🔴 Not started` or `🟡 In progress` with `✅ Done`
+- If the topic does not appear in the file, skip this step silently
+
 ---
 
-## Step 7 — Push branch and open PR
+## Step 7 — Build check, push branch, and open PR
+
+Run the build to catch any MDX or compilation errors before creating the PR:
+
+```bash
+npm run build
+```
+
+If the build fails: print the full error output, fix the issue in the topic file, then re-run the build to confirm it passes. Do not proceed to push or PR creation until the build succeeds.
+
+Once the build passes:
 
 ```bash
 git add topics/<section>/<topic>.md README.md topics/<section>/README.md
 git add assets/images/topics/<section>/<topic>.excalidraw 2>/dev/null || true
 git add assets/images/topics/<section>/<topic>.png 2>/dev/null || true
+git add topics/learning-paths/index.md 2>/dev/null || true
 git commit -m "docs: research and document $ARGUMENTS"
 git push origin docs/<topic-slug>
 ```
