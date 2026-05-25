@@ -21,12 +21,12 @@
 
 ## Progress
 
-**10 / 136 topics complete** — 🔴 not started · 🟡 in progress · 🟢 done · 🔨 demo built
+**11 / 136 topics complete** — 🔴 not started · 🟡 in progress · 🟢 done · 🔨 demo built
 
 | Section | Done | Total |
 |---------|------|-------|
 | 01 · Model inference core | 7 | 17 |
-| 02 · Prompting & control | 3 | 9 |
+| 02 · Prompting & control | 4 | 9 |
 | 03 · Serving infrastructure | 0 | 15 |
 | 04 · Model optimization | 0 | 11 |
 | 05 · Retrieval & memory | 0 | 12 |
@@ -79,7 +79,7 @@ Topics within each section go foundational → advanced.
 | 3 | [Few-shot & zero-shot](topics/02-prompting-control/few-shot-zero-shot.md) | 🔴 |
 | 4 | [In-context learning (ICL)](topics/02-prompting-control/in-context-learning.md) | 🔴 |
 | 5 | [Temperature, Top-p & sampling](topics/02-prompting-control/temperature-sampling.md) | 🟢 |
-| 6 | [Structured output & JSON mode](topics/02-prompting-control/structured-output.md) | 🔴 |
+| 6 | [Structured output & JSON mode](topics/02-prompting-control/structured-output.md) | 🟢 |
 | 7 | [Prompt versioning](topics/02-prompting-control/prompt-versioning.md) | 🔴 |
 | 8 | [Constitutional AI](topics/02-prompting-control/constitutional-ai.md) | 🔴 |
 | 9 | [System card](topics/02-prompting-control/system-card.md) | 🔴 |
