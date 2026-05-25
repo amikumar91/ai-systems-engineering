@@ -28,7 +28,7 @@ Three fundamentally different mechanisms exist, each with different reliability 
 
 You instruct the model via the [System prompt](system-prompt.md) or user message to return JSON matching a schema. Nothing constrains the decoding process. The model generates tokens freely and attempts to follow the schema through instruction-following alone.
 
-Failure rate: 5–20% in production depending on schema complexity and model size. Failure modes are predictable: preamble contamination ("Sure! Here's the JSON: {...}") that breaks `json.loads()`, hallucinated keys absent from your schema, and output truncated mid-brace when approaching the token limit. Prompt engineering → [Prompt engineering](prompt-engineering.md) can reduce but not eliminate these failures. Pre-2024 benchmarks found only 35.9% reliable schema compliance on complex schemas using this approach alone.
+Failure rate: 5–20% in production depending on schema complexity and model size. Failure modes are predictable: preamble contamination ("Sure! Here's the JSON: `{...}`") that breaks `json.loads()`, hallucinated keys absent from your schema, and output truncated mid-brace when approaching the token limit. Prompt engineering → [Prompt engineering](prompt-engineering.md) can reduce but not eliminate these failures. Pre-2024 benchmarks found only 35.9% reliable schema compliance on complex schemas using this approach alone.
 
 **Tier 2 — JSON mode (syntax guarantee, not schema guarantee)**
 
