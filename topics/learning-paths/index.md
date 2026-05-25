@@ -49,47 +49,47 @@ focused trail based on what you're trying to do — not what section something l
 
 ### Prompting & Control
 
-| # | Topic | Section |
-|---|-------|---------|
-| 1 | [System Prompt](../02-prompting-control/system-prompt.md) | 02 |
-| 2 | [Structured Output & JSON Mode](../02-prompting-control/structured-output.md) | 02 |
-| 3 | [Few-shot & Zero-shot](../02-prompting-control/few-shot-zero-shot.md) | 02 |
-| 4 | [Prompt Versioning](../02-prompting-control/prompt-versioning.md) | 02 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 1 | [System Prompt](../02-prompting-control/system-prompt.md) | 02 | 🔴 Not started |
+| 2 | [Structured Output & JSON Mode](../02-prompting-control/structured-output.md) | 02 | 🔴 Not started |
+| 3 | [Few-shot & Zero-shot](../02-prompting-control/few-shot-zero-shot.md) | 02 | 🔴 Not started |
+| 4 | [Prompt Versioning](../02-prompting-control/prompt-versioning.md) | 02 | 🔴 Not started |
 
 ### RAG & Retrieval
 
-| # | Topic | Section |
-|---|-------|---------|
-| 5 | [RAG](../05-retrieval-memory/rag.md) | 05 |
-| 6 | [Embedding Models](../05-retrieval-memory/embedding-models.md) | 05 |
-| 7 | [Vector Databases](../05-retrieval-memory/vector-databases.md) | 05 |
-| 8 | [Chunking Strategies](../05-retrieval-memory/chunking-strategies.md) | 05 |
-| 9 | [Hybrid Search (BM25 + Dense)](../05-retrieval-memory/hybrid-search.md) | 05 |
-| 10 | [Re-ranking](../05-retrieval-memory/reranking.md) | 05 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 5 | [RAG](../05-retrieval-memory/rag.md) | 05 | 🔴 Not started |
+| 6 | [Embedding Models](../05-retrieval-memory/embedding-models.md) | 05 | 🔴 Not started |
+| 7 | [Vector Databases](../05-retrieval-memory/vector-databases.md) | 05 | 🔴 Not started |
+| 8 | [Chunking Strategies](../05-retrieval-memory/chunking-strategies.md) | 05 | 🔴 Not started |
+| 9 | [Hybrid Search (BM25 + Dense)](../05-retrieval-memory/hybrid-search.md) | 05 | 🔴 Not started |
+| 10 | [Re-ranking](../05-retrieval-memory/reranking.md) | 05 | 🔴 Not started |
 
 ### Agents
 
-| # | Topic | Section |
-|---|-------|---------|
-| 11 | [AI Agent Fundamentals](../06-agents-orchestration/ai-agent-fundamentals.md) | 06 |
-| 12 | [Tool / Function Calling](../06-agents-orchestration/tool-calling.md) | 06 |
-| 13 | [ReAct Pattern](../06-agents-orchestration/react-pattern.md) | 06 |
-| 14 | [MCP — Model Context Protocol](../06-agents-orchestration/mcp.md) | 06 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 11 | [AI Agent Fundamentals](../06-agents-orchestration/ai-agent-fundamentals.md) | 06 | 🔴 Not started |
+| 12 | [Tool / Function Calling](../06-agents-orchestration/tool-calling.md) | 06 | 🔴 Not started |
+| 13 | [ReAct Pattern](../06-agents-orchestration/react-pattern.md) | 06 | 🔴 Not started |
+| 14 | [MCP — Model Context Protocol](../06-agents-orchestration/mcp.md) | 06 | 🔴 Not started |
 
 ### Safety Baseline
 
-| # | Topic | Section |
-|---|-------|---------|
-| 15 | [Prompt Injection](../07-safety-governance/prompt-injection.md) | 07 |
-| 16 | [Input Guardrails](../07-safety-governance/input-guardrails.md) | 07 |
-| 17 | [Output Guardrails](../07-safety-governance/output-guardrails.md) | 07 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 15 | [Prompt Injection](../07-safety-governance/prompt-injection.md) | 07 | 🔴 Not started |
+| 16 | [Input Guardrails](../07-safety-governance/input-guardrails.md) | 07 | 🔴 Not started |
+| 17 | [Output Guardrails](../07-safety-governance/output-guardrails.md) | 07 | 🔴 Not started |
 
 ### Eval Basics
 
-| # | Topic | Section |
-|---|-------|---------|
-| 18 | [LLM-as-judge](../08-evaluation-quality/llm-as-judge.md) | 08 |
-| 19 | [Hallucination Rate](../08-evaluation-quality/hallucination-rate.md) | 08 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 18 | [LLM-as-judge](../08-evaluation-quality/llm-as-judge.md) | 08 | 🔴 Not started |
+| 19 | [Hallucination Rate](../08-evaluation-quality/hallucination-rate.md) | 08 | 🔴 Not started |
 
 ---
 
@@ -102,56 +102,56 @@ focused trail based on what you're trying to do — not what section something l
 
 ### Integration Layer
 
-| # | Topic | Section |
-|---|-------|---------|
-| 1 | [Streaming (SSE)](../10-integration-cloud/streaming-sse.md) | 10 |
-| 2 | [AI Gateway](../10-integration-cloud/ai-gateway.md) | 10 |
-| 3 | [Auth & Rate Limiting](../10-integration-cloud/auth-rate-limiting.md) | 10 |
-| 4 | [Model Router](../10-integration-cloud/model-router.md) | 10 |
-| 5 | [Fallback Chain](../10-integration-cloud/fallback-chain.md) | 10 |
-| 6 | [Open-weight vs Managed Endpoints](../10-integration-cloud/open-weight-vs-managed.md) | 10 |
-| 7 | [OpenAI-compatible API](../03-serving-infrastructure/openai-compatible-api.md) | 03 |
-| 8 | [Managed Inference — Groq, Baseten, Modal](../10-integration-cloud/managed-inference.md) | 10 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 1 | [Streaming (SSE)](../10-integration-cloud/streaming-sse.md) | 10 | 🔴 Not started |
+| 2 | [AI Gateway](../10-integration-cloud/ai-gateway.md) | 10 | 🔴 Not started |
+| 3 | [Auth & Rate Limiting](../10-integration-cloud/auth-rate-limiting.md) | 10 | 🔴 Not started |
+| 4 | [Model Router](../10-integration-cloud/model-router.md) | 10 | 🔴 Not started |
+| 5 | [Fallback Chain](../10-integration-cloud/fallback-chain.md) | 10 | 🔴 Not started |
+| 6 | [Open-weight vs Managed Endpoints](../10-integration-cloud/open-weight-vs-managed.md) | 10 | 🔴 Not started |
+| 7 | [OpenAI-compatible API](../03-serving-infrastructure/openai-compatible-api.md) | 03 | 🔴 Not started |
+| 8 | [Managed Inference — Groq, Baseten, Modal](../10-integration-cloud/managed-inference.md) | 10 | 🔴 Not started |
 
 ### Agents & Orchestration (Builder Focus)
 
-| # | Topic | Section |
-|---|-------|---------|
-| 9 | [Chain of Thought (CoT)](../06-agents-orchestration/chain-of-thought.md) | 06 |
-| 10 | [Human-in-the-loop](../06-agents-orchestration/human-in-the-loop.md) | 06 |
-| 11 | [LangChain & LlamaIndex](../06-agents-orchestration/langchain-llamaindex.md) | 06 |
-| 12 | [LangGraph](../06-agents-orchestration/langgraph.md) | 06 |
-| 13 | [Tool Registry](../06-agents-orchestration/tool-registry.md) | 06 |
-| 14 | [Idempotent Tool Calls](../06-agents-orchestration/idempotent-tool-calls.md) | 06 |
-| 15 | [Working & Episodic Memory](../05-retrieval-memory/working-episodic-memory.md) | 05 |
-| 16 | [Agentic RAG](../05-retrieval-memory/agentic-rag.md) | 05 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 9 | [Chain of Thought (CoT)](../06-agents-orchestration/chain-of-thought.md) | 06 | 🔴 Not started |
+| 10 | [Human-in-the-loop](../06-agents-orchestration/human-in-the-loop.md) | 06 | 🔴 Not started |
+| 11 | [LangChain & LlamaIndex](../06-agents-orchestration/langchain-llamaindex.md) | 06 | 🔴 Not started |
+| 12 | [LangGraph](../06-agents-orchestration/langgraph.md) | 06 | 🔴 Not started |
+| 13 | [Tool Registry](../06-agents-orchestration/tool-registry.md) | 06 | 🔴 Not started |
+| 14 | [Idempotent Tool Calls](../06-agents-orchestration/idempotent-tool-calls.md) | 06 | 🔴 Not started |
+| 15 | [Working & Episodic Memory](../05-retrieval-memory/working-episodic-memory.md) | 05 | 🔴 Not started |
+| 16 | [Agentic RAG](../05-retrieval-memory/agentic-rag.md) | 05 | 🔴 Not started |
 
 ### Observability for Builders
 
-| # | Topic | Section |
-|---|-------|---------|
-| 17 | [LLMOps Overview](../09-observability-ops/llmops-overview.md) | 09 |
-| 18 | [Tracing & Spans](../09-observability-ops/tracing.md) | 09 |
-| 19 | [Langfuse & LangSmith](../09-observability-ops/langfuse-langsmith.md) | 09 |
-| 20 | [Cost per Token](../09-observability-ops/cost-per-token.md) | 09 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 17 | [LLMOps Overview](../09-observability-ops/llmops-overview.md) | 09 | 🔴 Not started |
+| 18 | [Tracing & Spans](../09-observability-ops/tracing.md) | 09 | 🔴 Not started |
+| 19 | [Langfuse & LangSmith](../09-observability-ops/langfuse-langsmith.md) | 09 | 🔴 Not started |
+| 20 | [Cost per Token](../09-observability-ops/cost-per-token.md) | 09 | 🔴 Not started |
 
 ### Eval for Builders
 
-| # | Topic | Section |
-|---|-------|---------|
-| 21 | [RAGAS](../08-evaluation-quality/ragas.md) | 08 |
-| 22 | [A/B Prompt Testing](../08-evaluation-quality/ab-prompt-testing.md) | 08 |
-| 23 | [Offline vs Online Eval](../08-evaluation-quality/offline-vs-online-eval.md) | 08 |
-| 24 | [Golden Dataset](../08-evaluation-quality/golden-dataset.md) | 08 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 21 | [RAGAS](../08-evaluation-quality/ragas.md) | 08 | 🔴 Not started |
+| 22 | [A/B Prompt Testing](../08-evaluation-quality/ab-prompt-testing.md) | 08 | 🔴 Not started |
+| 23 | [Offline vs Online Eval](../08-evaluation-quality/offline-vs-online-eval.md) | 08 | 🔴 Not started |
+| 24 | [Golden Dataset](../08-evaluation-quality/golden-dataset.md) | 08 | 🔴 Not started |
 
 ### New Patterns
 
-| # | Topic | File |
-|---|-------|------|
-| 25 | AI SDK Patterns | [10-integration-cloud/ai-sdk-patterns.md](../10-integration-cloud/ai-sdk-patterns.md) |
-| 26 | Webhook vs Streaming vs Polling | [10-integration-cloud/webhook-vs-streaming-vs-polling.md](../10-integration-cloud/webhook-vs-streaming-vs-polling.md) |
-| 27 | Context Management Patterns | [02-prompting-control/context-management-patterns.md](../02-prompting-control/context-management-patterns.md) |
-| 28 | [PII Redaction](../07-safety-governance/pii-redaction.md) | 07 |
+| # | Topic | Section | Status |
+|---|-------|---------|--------|
+| 25 | [AI SDK Patterns](../10-integration-cloud/ai-sdk-patterns.md) | 10 | 🔴 Not started |
+| 26 | [Webhook vs Streaming vs Polling](../10-integration-cloud/webhook-vs-streaming-vs-polling.md) | 10 | 🔴 Not started |
+| 27 | [Context Management Patterns](../02-prompting-control/context-management-patterns.md) | 02 |🔴 Not started |
+| 28 | [PII Redaction](../07-safety-governance/pii-redaction.md) | 07 |🔴 Not started |
 
 ---
 

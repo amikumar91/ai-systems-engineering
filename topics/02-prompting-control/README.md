@@ -4,7 +4,7 @@
 
 | Step | Topic | One-liner | Status |
 |------|-------|-----------|--------|
-| 1 | [System prompt](system-prompt.md) | Setting the model's persona, constraints, and context before the conversation starts | 🔴 |
+| 1 | [System prompt](system-prompt.md) | Setting the model's persona, constraints, and context before the conversation starts | 🟢 |
 | 2 | [Prompt engineering](prompt-engineering.md) | The craft of writing instructions the model follows reliably | 🟢 |
 | 3 | [Few-shot & zero-shot](few-shot-zero-shot.md) | Guiding the model with examples vs. instructions alone | 🔴 |
 | 4 | [In-context learning (ICL)](in-context-learning.md) | How models adapt behavior from examples in the prompt window | 🔴 |
