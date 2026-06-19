@@ -54,7 +54,7 @@ focused trail based on what you're trying to do — not what section something l
 | 1 | [System Prompt](../02-prompting-control/system-prompt.md) | 02 | ✅ Done |
 | 2 | [Structured Output & JSON Mode](../02-prompting-control/structured-output.md) | 02 | ✅ Done |
 | 3 | [Few-shot & Zero-shot](../02-prompting-control/few-shot-zero-shot.md) | 02 | ✅ Done |
-| 4 | [Prompt Versioning](../02-prompting-control/prompt-versioning.md) | 02 | 🔴 Not started |
+| 4 | [Prompt Versioning](../02-prompting-control/prompt-versioning.md) | 02 | ✅ Done |
 
 ### RAG & Retrieval
 
