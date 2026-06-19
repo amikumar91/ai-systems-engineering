@@ -28,7 +28,7 @@ Every production prompt versioning system, regardless of tooling, operates acros
 
 **Layer 3 — Metadata envelope.** Each version captures the full execution context: the prompt template with its variable placeholders, model and parameter configuration (model name, temperature, top-p, max_tokens), author, change rationale, and linked evaluation scores. Storing the template is not enough — a change from `{{user_input}}` to `{{user_query}}` is a breaking change to downstream code even if the instruction text is identical.
 
-<!-- Excalidraw lifecycle diagram: assets/images/topics/02-prompting-control/prompt-versioning.excalidraw — export to PNG via VS Code Excalidraw extension to render here -->
+![Prompt versioning lifecycle](../../assets/images/topics/02-prompting-control/prompt-versioning.png)
 
 ### The deployment pipeline
 
